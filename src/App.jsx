@@ -1,12 +1,12 @@
 import React from 'react'
+import About from './Components/About'
 import "./App.css"
 
 const App = () => {
   return (
-    <div>
-      <h1>Team F</h1> 
-      <p>portfolio project</p>
-    </div>
+   <>
+   <About/>
+   </>
   )
 }
 
