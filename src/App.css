@@ -11,14 +11,21 @@
   box-sizing: border-box;
   background-color: rgb(50 50 76); /* whole project bgColor */
 
+
 }
+
+
+.myDarkBlue {
+  background-color: rgb(50 50 76);
+}
+
 
 
 .myCursor {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #fff;
+  background-color: rgb(50 50 76); /* whole project bgColor */
   width: 100%;
   border-left: 0.02em solid transparent;
   animation: typing 4s steps(30) infinite
@@ -27,14 +34,9 @@
 @keyframes typing {
   from {
     width: 100%;
-
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: rgb(50 50 76); /* whole project bgColor */
-
-    
-
   }
   to {
     width: 0;
@@ -44,5 +46,6 @@
 .myLabel {
   height: 2px;
   width: 38px;
-  background: #707070;
+  background-color: rgb(50 50 76); /* whole project bgColor */
+  ;
 }

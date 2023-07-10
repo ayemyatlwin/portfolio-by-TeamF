@@ -2,19 +2,16 @@ import React from "react";
 //import { Helmet } from "react-helmet";
 import Button from "@mui/material/Button";
 import { BsPauseFill } from "react-icons/bs";
-//import PauseIcon from '@mui/icons-material/Pause';
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import MobileStepper from "@mui/material/MobileStepper";
 import Paper from "@mui/material/Paper";
-//import Typography from "@mui/material/Typography";
-//import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
-//import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
-import Label from "./Label";
+import Badges from "./Badges";
 import Typing from "./Typing";
 import { motion } from "framer-motion";
+import "../app.css";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -59,13 +56,13 @@ const TestimonialDetail = () => {
 
   return (
     <div className="basis-1/3 mb-20 pb-10">
-      <Label mytext={"testimonial"} />
+      <Badges> Clients </Badges>
       <motion.p
         initial={{ y: 30 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: false }}
-        className="text-3xl font-medium mb-5"
+        className="text-3xl font-medium mb-5 text-white"
       >
         What My Happy
         <Typing typedText={" Clients "} />
@@ -77,7 +74,7 @@ const TestimonialDetail = () => {
         transition={{ duration: 0.6, delay: 0.5 }}
         viewport={{ once: false }}
       >
-        <p className=" mb-5">
+        <p className=" mb-5 text-[#BEBFBF]">
           Really they guy is amazing , he saved my times and properly have
           completed my requirement with great effort. I appreciate to him for
           web &amp; app design, he is good at fit.
@@ -110,42 +107,51 @@ const TestimonialDetail = () => {
                 </div>
               ))}
             </AutoPlaySwipeableViews>
-            <Paper
-              square
-              elevation={0}
-              sx={{
-                height: 50,
-                pl: 2,
-                bgcolor: "background.default",
-              }}
-              className="basis-3/4 flex flex-col items-start"
-            >
-              <p className=" block">{images[activeStep].name}</p>
-              <p className=" block">
-                CEO of{" "}
-                <span className="text-[#df5646]">
-                  {images[activeStep].Company}
-                </span>
-              </p>
-            </Paper>
+            <div className="myDarkBlue basis-3/4 flex flex-col items-start ">
+              <Paper
+                square
+                elevation={0}
+                sx={{
+                  bgcolor: "background.default",
+                }}
+              >
+                <p className="text-white block">{images[activeStep].name}</p>
+                <p className="text-white block">
+                  CEO of{" "}
+                  <span className="text-[#df5646]">
+                    {images[activeStep].Company}
+                  </span>
+                </p>
+              </Paper>
+            </div>
+
             <motion.div
               initial={{ scale: 0.5 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.6, delay: 0.5 }}
               viewport={{ once: false }}
-              className="bg-[#df5646] border-2 rounded-3xl shadow-lg"
+              className=""
             >
-              <Button className="w-16 h-16 ">
-                <BsPauseFill size={"3rem"} color="white" />
+              <Button className="">
+                <BsPauseFill
+                  size={"3rem"}
+                  color="white"
+                  className="rounded-xl bg-[#df5646] z-10"
+                />
               </Button>
             </motion.div>
           </div>
-          <MobileStepper
-            steps={maxSteps}
-            position="static"
-            activeStep={activeStep}
-            className=" my-3"
-          />
+          <div className=" mt-3 p-0 inline-block bg-[#32324C]">
+            <MobileStepper
+              steps={maxSteps}
+              position="static"
+              activeStep={activeStep}
+              sx={{
+                bgcolor: "background.default",
+                p:"0"
+              }}
+            />
+          </div>
         </Box>
       </motion.div>
     </div>
