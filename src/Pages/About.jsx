@@ -1,12 +1,12 @@
 import React from "react";
-import Badges from "./Badges";
+import Badges from "../Components/Badges";
 import {BsArrowRightShort} from "react-icons/bs"
 import {FaLinkedinIn,FaFacebookF,FaGithub,FaTwitter} from "react-icons/fa"
 
 const About = () => {
   return (
     <>
-      <div className=" container mx-auto my-20 px-10  h-screen   ">
+      <div className=" container mx-auto  px-10 lg:px-20 lg:pt-20  h-screen   ">
         <div className="flex flex-col lg:flex-row">
           <div className=" basis-5/12 w-full px-5 ">
             <Badges>About me</Badges>
