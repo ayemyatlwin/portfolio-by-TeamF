@@ -11,7 +11,7 @@ const StayConnected = () => {
         viewport={{ once: false }}
         src="https://wordpressriverthemes.com/HTML/itsme/assets/images/contact/footer-bottom-girl.png"
         alt=""
-        className="w-[250px] h-[400px] mt-10 md:h-[500px] absolute bottom-0 left-20 lg:left-56"
+        className="w-[250px] h-[400px] mt-10 md:h-[500px] absolute bottom-0 left-20 lg:left-56 z-10 bg-transparent"
       />
       <div className="w-full h-full flex flex-col justify-between items-center">
         <motion.div
@@ -21,34 +21,34 @@ const StayConnected = () => {
           viewport={{ once: false }}
           className="my-20 flex flex-col justify-center items-center mb-5"
         >
-          <h1 className=" text-2xl mb-5 font-bold">Stay Connected</h1>
-          <p className=" text-gray-500 mb-2">Bangladesh</p>
-          <h3 className=" text-xl font-semibold mb-2 hover:text-[#df5646]">
+          <h1 className=" text-2xl mb-5 font-bold text-white">Stay Connected</h1>
+          <p className=" mb-2 text-[#A3A5A7]">Bangladesh</p>
+          <h3 className=" text-lg font-medium mb-2 text-white hover:text-[#df5646]">
             hello_niharik@gmail.com
           </h3>
-          <p className=" text-gray-500 mb-2">(+778) 675-0765</p>
+          <p className=" text-gray-200 hover:text-[#df5646] mb-2">(+778) 675-0765</p>
           <div className=" flex gap-3 justify-center items-center my-5">
-            <button className=" w-10 h-10 rounded-full shadow-lg flex self-center">
+            <button className=" ">
               <img
                 src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png"
-                className="p-2"
+                className="p-2 bg-white w-10 h-10 rounded-full shadow-lg flex self-center"
                 alt=""
               />
             </button>
             <button
               alt=""
-              className=" w-10 h-10 rounded-full shadow-lg object-center flex self-center"
+              className=""
             >
               <img
                 src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png"
-                className="p-2"
+                className="p-2  bg-white w-10 h-10 rounded-full shadow-lg flex self-center"
                 alt=""
               />
             </button>
-            <button className=" w-10 h-10 rounded-full shadow-lg flex self-center">
+            <button className="">
               <img
                 src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png"
-                className="p-2"
+                className="p-2 bg-white  w-10 h-10 rounded-full shadow-lg flex self-center"
                 alt=""
               />
             </button>
