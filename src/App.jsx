@@ -8,6 +8,7 @@ import ContactMe from "./Pages/ContactMe";
 
 const App = () => {
   return (
+
     <div className="overflow-hidden screenScroll scrollbar-thin scrollbar-thumb-rose-500 scrollbar-track-slate-300">
       <Testimonial />
       <Weapons />
@@ -18,4 +19,5 @@ const App = () => {
 };
 
 export default App;
+
 
