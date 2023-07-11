@@ -5,15 +5,12 @@ import {FaLinkedinIn,FaFacebookF,FaGithub,FaTwitter} from "react-icons/fa"
 
 const About = () => {
   return (
-    <div className="flex justify-center items-center h-screen">
-
-      <div className=" container mx-auto px-10  ">
-        <div className="flex flex-col lg:flex-row  ">
-          <div className=" lg:basis-5/12 ">
-
-    
+    <div className="flex justify-center items-center h-screen w-full md:max-w-3xl lg:max-w-screen-2xl px-3 md:px-4 lg:px-14 mx-auto">
+      <div className=" container ">
+        <div className="flex flex-col lg:flex-row">
+          <div className=" basis-5/12 w-full px-5 ">
             <Badges>About me</Badges>
-            <h1 className=" font-serif text-4xl md:text-5xl lg:text-6xl font-extrabold leading-relaxed ">
+            <h1 className=" font-serif text-6xl font-extrabold leading-relaxed ">
               Hi,
               <br />
               I'm <span className=" tracking-wider text-[#DF5646] "> Niharika </span>
@@ -32,41 +29,29 @@ const About = () => {
             </p>
             <button
               type="button"
-              className="text-white tracking-wider bg-[#DF5646] hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300  rounded-lg  px-5 py-3 my-10 text-center inline-flex items-center capitalize "
+              class="text-white tracking-wider bg-[#DF5646] hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300  rounded-lg  px-5 py-3 my-10 text-center inline-flex items-center capitalize "
             >
               Hire me
               <BsArrowRightShort className=" bg-inherit w-7 h-7 text-white ms-3"/>
             </button>
             <div className=" flex flex-row gap-3 items-end">
               <button type="button" className=" text-[#bebfbf] " >
-                <FaFacebookF className="w-5 h-5 my-2 mx-2 rounded-md cursor-pointer "/>
+                <FaFacebookF className="w-5 h-5 my-2 mx-2 cursor-pointer "/>
               </button>
               <button type="button" className=" text-[#bebfbf]  " >
-              <FaLinkedinIn className="w-5 h-5 my-2 mx-2 rounded-md cursor-pointer"/>
+              <FaLinkedinIn className="w-5 h-5 my-2 mx-2 cursor-pointer"/>
               </button>
               <button type="button" className=" text-[#bebfbf] " >
-                <FaGithub className="w-5 h-5 my-2 mx-2 rounded-md cursor-pointer"/>
+                <FaGithub className="w-5 h-5 my-2 mx-2 cursor-pointer"/>
               </button>
               <button type="button" className=" text-[#bebfbf] " >
-                <FaTwitter className="w-5 h-5 my-2 mx-2 rounded-md cursor-pointer"/>
+                <FaTwitter className="w-5 h-5 my-2 mx-2 cursor-pointer"/>
               </button>
             </div>
           </div>
 
-          <div className="relative lg:basis-7/12  ">
-          <div className=" absolute w-7 md:w-20 lg:w-16 h-4 z-50 left-5  -top-1 md:-top-5 lg:top-3">
-                <img
-                  src="https://wordpressriverthemes.com/HTML/itsme/assets/images/about/shape-one-dark.png"
-                  className=" ms-auto "
-                  alt=""
-                />
-              </div>
-              <div className=" absolute z-50 left-3/4 -top-2 md:top-0 ">
-                <img
-                  src="https://wordpressriverthemes.com/HTML/itsme/assets/images/about/shape-two-dark.png"
-                  alt=""
-                />
-              </div>
+          <div className=" basis-7/12 ">
+            <div className="relative mt-10 pl-0 lg:pl-14">
               <div className="absolute ">
                 <img
                   src="https://wordpressriverthemes.com/HTML/itsme/assets/images/about/about-dark.png"
@@ -74,8 +59,20 @@ const About = () => {
                   alt="aboutIamage"
                 />
               </div>
-              
-           
+              <div className="absolute w-10 lg:w-16 h-4 left-40 top-1 lg:left-40 ">
+                <img
+                  src="https://wordpressriverthemes.com/HTML/itsme/assets/images/about/shape-one-dark.png"
+                  className=" "
+                  alt=""
+                />
+              </div>
+              <div className="absolute top-5 left-96 lg:top-0">
+                <img
+                  src="https://wordpressriverthemes.com/HTML/itsme/assets/images/about/shape-two-dark.png"
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

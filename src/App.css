@@ -114,6 +114,7 @@ a:hover {
   height: 2px;
   width: 100%;
   background: var(--light-color);
+  /* background: '#3e4651'; */
   transition: all 400ms ease-in-out;
 }
 .css-1aw6dkm .hamburger span, .css-13w6a9r .hamburger span{
@@ -209,4 +210,11 @@ a:hover {
 }
 .css-1aw6dkm .fullpage-wrapper > div:nth-child(1) > div{
   background-color: #fff !important;
+}
+
+
+/* *********** drawer ************* */
+.css-f2jcso-MuiPaper-root-MuiDrawer-paper{
+  background-color: var(--light-color) !important;
+  color: var(--heading-color) !important;
 }
