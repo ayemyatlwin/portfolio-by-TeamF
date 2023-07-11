@@ -21,12 +21,12 @@ const StayConnected = () => {
           viewport={{ once: false }}
           className="my-20 flex flex-col justify-center items-center mb-5"
         >
-          <h1 className=" text-2xl mb-5 font-bold text-white">Stay Connected</h1>
+          <h1 className=" text-2xl mb-5 font-bold">Stay Connected</h1>
           <p className=" mb-2 text-[#A3A5A7]">Bangladesh</p>
-          <h3 className=" text-lg font-medium mb-2 text-white hover:text-[#df5646]">
+          <h3 className=" text-lg font-medium mb-2 hover:text-[#df5646]">
             hello_niharik@gmail.com
           </h3>
-          <p className=" text-gray-200 hover:text-[#df5646] mb-2">(+778) 675-0765</p>
+          <p className=" hover:text-[#df5646] mb-2">(+778) 675-0765</p>
           <div className=" flex gap-3 justify-center items-center my-5">
             <button className=" ">
               <img
