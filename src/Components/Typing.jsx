@@ -1,12 +1,10 @@
 import React from "react";
 import '../App.css'
 
-const Typing = ({ typedText }) => {
+const Typing = ({ children}) => {
   return (
-    <>
-      <span className="inline relative text-[#df5646]"> {typedText} <span className="myCursor"> </span>
+      <span className="inline relative text-[#df5646]">{children}<span className="myCursor"> </span>
       </span>
-    </>
   );
 };
 
