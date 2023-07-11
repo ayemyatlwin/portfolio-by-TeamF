@@ -6,16 +6,16 @@ import {FaLinkedinIn,FaFacebookF,FaGithub,FaTwitter} from "react-icons/fa"
 const About = () => {
   return (
     <>
-      <div className=" container mx-auto  px-10 lg:px-20 lg:pt-20  h-screen   ">
+      <div className=" container mx-auto  px-10 lg:px-20 lg:pt-20  h-screen ">
         <div className="flex flex-col lg:flex-row">
           <div className=" basis-5/12 w-full px-5 ">
             <Badges>About me</Badges>
-            <h1 className="text-white font-serif text-6xl font-extrabold leading-relaxed ">
+            <h1 className=" font-serif text-6xl font-extrabold leading-relaxed ">
               Hi,
               <br />
               I'm <span className=" tracking-wider text-[#DF5646] "> Niharika </span>
             </h1>
-            <h3 className=" tracking-wide text-white leading-relaxed text-2xl font-sans ">
+            <h3 className=" tracking-wide  leading-relaxed text-2xl font-sans ">
               Frontend Web Developer
             </h3>
             <p className=" tracking-wider my-3 text-[18px] text-[#bebfbf] font-sans">
