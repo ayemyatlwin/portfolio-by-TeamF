@@ -13,7 +13,7 @@ const ContactMeDetail = () => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: false }}
-        className="text-3xl font-medium mb-5 text-white"
+        className="text-3xl font-medium mb-5"
       >
         Estimate Your Project?
         <br />
