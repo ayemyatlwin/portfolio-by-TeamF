@@ -6,9 +6,9 @@ import {FaLinkedinIn,FaFacebookF,FaGithub,FaTwitter} from "react-icons/fa"
 const About = () => {
   return (
     <>
-      <div className=" container mx-auto  px-10 lg:px-20 lg:pt-20  h-screen   ">
+      <div className=" container mx-auto  lg:px-20 my-10  lg:h-screen   ">
         <div className="flex flex-col lg:flex-row">
-          <div className=" basis-5/12 w-full px-5 ">
+          <div className=" lg:basis-5/12 w-full px-5 ">
             <Badges>About me</Badges>
             <h1 className=" font-serif text-6xl font-extrabold leading-relaxed ">
               Hi,
@@ -29,7 +29,7 @@ const About = () => {
             </p>
             <button
               type="button"
-              class="text-white tracking-wider bg-[#DF5646] hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300  rounded-lg  px-5 py-3 my-10 text-center inline-flex items-center capitalize "
+              className="text-white tracking-wider bg-[#DF5646] hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300  rounded-lg  px-5 py-3 my-10 text-center inline-flex items-center capitalize "
             >
               Hire me
               <BsArrowRightShort className=" bg-inherit w-7 h-7 text-white ms-3"/>
@@ -50,28 +50,28 @@ const About = () => {
             </div>
           </div>
 
-          <div className=" basis-7/12 ">
-            <div className="relative mt-10">
-              <div className="absolute ">
+          <div className=" lg:basis-7/12 ">
+            <div className="">
+              <div className=" ">
                 <img
                   src="https://wordpressriverthemes.com/HTML/itsme/assets/images/about/about-dark.png"
                   className=""
                   alt="aboutIamage"
                 />
               </div>
-              <div className="absolute w-10 lg:w-16 h-4 left-40 top-1 lg:left-40 ">
+              {/* <div className=" w-10 lg:w-16 h-4  ">
                 <img
                   src="https://wordpressriverthemes.com/HTML/itsme/assets/images/about/shape-one-dark.png"
                   className=" "
                   alt=""
                 />
               </div>
-              <div className="absolute top-5 left-96 lg:top-0">
+              <div className="  ">
                 <img
                   src="https://wordpressriverthemes.com/HTML/itsme/assets/images/about/shape-two-dark.png"
                   alt=""
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
