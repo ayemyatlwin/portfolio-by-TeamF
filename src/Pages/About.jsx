@@ -10,7 +10,7 @@ const About = () => {
         <div className="flex flex-col lg:flex-row">
           <div className=" basis-5/12 w-full px-5 ">
             <Badges>About me</Badges>
-            <h1 className=" font-serif text-6xl font-extrabold leading-relaxed ">
+            <h1 className=" font-serif text-4xl  lg:text-6xl font-extrabold leading-relaxed ">
               Hi,
               <br />
               I'm <span className=" tracking-wider text-[#DF5646] "> Niharika </span>
@@ -29,7 +29,7 @@ const About = () => {
             </p>
             <button
               type="button"
-              class="text-white tracking-wider bg-[#DF5646] hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300  rounded-lg  px-5 py-3 my-10 text-center inline-flex items-center capitalize "
+              className="text-white tracking-wider bg-[#DF5646] hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300  rounded-lg  px-5 py-3 my-10 text-center inline-flex items-center capitalize "
             >
               Hire me
               <BsArrowRightShort className=" bg-inherit w-7 h-7 text-white ms-3"/>

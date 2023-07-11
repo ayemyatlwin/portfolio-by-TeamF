@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
 import About from "../Pages/About";
 import Services from "../Pages/Services";
+import Skills from "../Pages/Skills"
 import Testimonial from "../Pages/Testimonial";
 import Navbar from "./Navbar";
 import Weapons from "../Pages/Weapons";
@@ -25,6 +26,9 @@ function MyMain() {
         component: <Services />,
       },
       {
+        component: <Skills/>
+      },
+      {
         component: <Testimonial />,
       },
       {
@@ -39,7 +43,7 @@ function MyMain() {
   if (!fullpages.length) {
     return null;
   }
-  const anchors = ["About", "Services", "Testimonial", "Weapons", "ContactMe"];
+  const anchors = ["About", "Services","Skills", "Testimonial", "Weapons", "ContactMe"];
   return (
     <div className="App">
       <Navbar ColorModeContext={ColorModeContext}/>
