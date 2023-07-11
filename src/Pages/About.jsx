@@ -6,9 +6,12 @@ import {FaLinkedinIn,FaFacebookF,FaGithub,FaTwitter} from "react-icons/fa"
 const About = () => {
   return (
     <>
+
       <div className=" container mx-auto px-10 mt-10 lg:mt-32 overflow-auto scrollbar-none   h-screen   ">
         <div className="flex flex-col lg:flex-row  ">
           <div className=" lg:basis-5/12 ">
+
+    
             <Badges>About me</Badges>
             <h1 className=" font-serif text-4xl md:text-5xl lg:text-6xl font-extrabold leading-relaxed ">
               Hi,
