@@ -53,10 +53,6 @@ body {
 @keyframes typing {
   from {
     width: 100%;
-    /*padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    */
   }
   to {
     width: 0;

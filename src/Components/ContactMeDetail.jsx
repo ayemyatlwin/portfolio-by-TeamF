@@ -28,21 +28,21 @@ const ContactMeDetail = () => {
       >
         <input
           type="text"
-          className=" border-b border-[#A3A5A7] focus:border-[#df5646] outline-none h-10 w-full"
+          className=" border-b bg-transparent border-[#A3A5A7] focus:border-[#df5646] outline-none h-10 w-full"
           placeholder="What's your name?"
           name=""
           id=""
         />
         <input
           type="text"
-          className=" border-b border-[#A3A5A7] focus:border-[#df5646] outline-none h-10 w-full"
+          className=" border-b bg-transparent border-[#A3A5A7] focus:border-[#df5646] outline-none h-10 w-full"
           placeholder="Your email?"
           name=""
           id=""
         />
         <input
           type="text"
-          className=" border-b border-[#A3A5A7] focus:border-[#df5646] outline-none h-10 w-full"
+          className=" border-b bg-transparent border-[#A3A5A7] focus:border-[#df5646] outline-none h-10 w-full"
           placeholder="Tell me about your project"
           name=""
           id=""
