@@ -6,7 +6,7 @@ import {FaLinkedinIn,FaFacebookF,FaGithub,FaTwitter} from "react-icons/fa"
 const About = () => {
   return (
     <>
-      <div className=" container mx-auto  px-10 lg:px-20 lg:pt-20  h-screen   ">
+      <div className=" container mx-auto my-20  px-10 lg:px-20 lg:pt-20  h-screen   ">
         <div className="flex flex-col lg:flex-row">
           <div className=" basis-5/12 w-full px-5 ">
             <Badges>About me</Badges>
@@ -36,16 +36,16 @@ const About = () => {
             </button>
             <div className=" flex flex-row gap-3 items-end">
               <button type="button" className=" text-[#bebfbf] " >
-                <FaFacebookF className="w-5 h-5 my-2 mx-2 cursor-pointer "/>
+                <FaFacebookF className="w-5 h-5 my-2 mx-2 rounded-md cursor-pointer "/>
               </button>
               <button type="button" className=" text-[#bebfbf]  " >
-              <FaLinkedinIn className="w-5 h-5 my-2 mx-2 cursor-pointer"/>
+              <FaLinkedinIn className="w-5 h-5 my-2 mx-2 rounded-md cursor-pointer"/>
               </button>
               <button type="button" className=" text-[#bebfbf] " >
-                <FaGithub className="w-5 h-5 my-2 mx-2 cursor-pointer"/>
+                <FaGithub className="w-5 h-5 my-2 mx-2 rounded-md cursor-pointer"/>
               </button>
               <button type="button" className=" text-[#bebfbf] " >
-                <FaTwitter className="w-5 h-5 my-2 mx-2 cursor-pointer"/>
+                <FaTwitter className="w-5 h-5 my-2 mx-2 rounded-md cursor-pointer"/>
               </button>
             </div>
           </div>
