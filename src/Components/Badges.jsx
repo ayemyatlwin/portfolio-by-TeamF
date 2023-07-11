@@ -6,6 +6,7 @@ const Badges = ({children}) => {
     <div className=" border-b-2 my-auto w-12"></div>
 <span class="bg-[#fcf1e7] text-red-500 font-normal tracking-wide mr-2 px-4 py-1 capitalize rounded-none ">{children}</span>
 
+   
 </div>
   )
 }
