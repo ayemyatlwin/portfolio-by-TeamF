@@ -3,6 +3,7 @@ import { MdOutlineWbSunny, MdOutlineNightlight } from "react-icons/md";
 import { FaDownload } from "react-icons/fa";
 import IconButton from "@mui/material/IconButton";
 import { useTheme } from "@mui/material/styles";
+import Sidebar from "./Sidebar";
 
 const Navbar = ({ ColorModeContext }) => {
   const theme = useTheme();
@@ -48,13 +49,7 @@ const Navbar = ({ ColorModeContext }) => {
             </IconButton>
           </div>
 
-          <button className="m-0 p-0 right-[50px] border-none ">
-            <span className="hamburger">
-              <span className="top-bun"></span>
-              <span className="meat"></span>
-              <span className="bottom-bun"></span>
-            </span>
-          </button>
+          <Sidebar/>
         </div>
       </div>
     </header>
