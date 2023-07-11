@@ -7,7 +7,7 @@ import { GoVersions, GoTools } from "react-icons/go";
 const Services = () => {
   return (
     <>
-      <div className=" container mx-auto   lg:px-20 lg:py-20 my-10  lg:h-screen  ">
+      <div className=" container mx-auto lg:px-20 lg:h-screen flex justify-center items-center  ">
         <div className="flex flex-col lg:flex-row">
           <div className="  lg:basis-5/12 w-full  px-5 ">
             <Badges>Services</Badges>
