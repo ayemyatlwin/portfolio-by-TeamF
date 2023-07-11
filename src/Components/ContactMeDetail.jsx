@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const ContactMeDetail = () => {
   return (
-    <div className=" w-full basis-1/2 lg:mr-20">
+    <div className=" w-full basis-1/2 lg:mr-10">
         <Badges> Contact Me </Badges>
 
       <motion.p
@@ -13,7 +13,7 @@ const ContactMeDetail = () => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: false }}
-        className="text-3xl font-medium mb-5"
+        className="font-serif text-3xl font-medium mb-5"
       >
         Estimate Your Project?
         <br />

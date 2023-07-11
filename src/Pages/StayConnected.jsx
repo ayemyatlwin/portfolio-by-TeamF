@@ -21,7 +21,7 @@ const StayConnected = () => {
           viewport={{ once: false }}
           className="my-20 flex flex-col justify-center items-center mb-5"
         >
-          <h1 className=" text-2xl mb-5 font-bold">Stay Connected</h1>
+          <h1 className="font-serif text-2xl mb-5 font-bold">Stay Connected</h1>
           <p className=" mb-2 text-[#A3A5A7]">Bangladesh</p>
           <h3 className=" text-lg font-medium mb-2 hover:text-[#df5646]">
             hello_niharik@gmail.com
