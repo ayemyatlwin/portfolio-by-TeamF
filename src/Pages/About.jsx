@@ -7,7 +7,7 @@ const About = () => {
   return (
     <>
 
-      <div className=" container mx-auto px-10 mt-10 lg:mt-32 overflow-auto scrollbar-none   h-screen   ">
+      <div className=" container mx-auto px-10   h-screen   ">
         <div className="flex flex-col lg:flex-row  ">
           <div className=" lg:basis-5/12 ">
 
@@ -53,7 +53,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="relative lg:basis-7/12 mt-10 ">
+          <div className="relative lg:basis-7/12  ">
           <div className=" absolute w-7 md:w-20 lg:w-16 h-4 z-50 left-5  -top-1 md:-top-5 lg:top-3">
                 <img
                   src="https://wordpressriverthemes.com/HTML/itsme/assets/images/about/shape-one-dark.png"
