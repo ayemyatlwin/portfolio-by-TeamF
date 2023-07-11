@@ -3,8 +3,8 @@ import Badges from "../Components/Badges";
 
 const Skills = () => {
   return (
-    <>
-      <div className="container mx-auto px-10 my-10 lg:my-32 overflow-auto scrollbar-none   h-screen  ">
+    <div className=" flex justify-center items-center h-screen">
+      <div className="container mx-auto px-10    ">
         <div className="flex flex-col lg:flex-row">
           <div className=" lg:basis-5/12 w-full px-5 ">
             <Badges>Skills</Badges>
@@ -89,7 +89,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
