@@ -7,33 +7,32 @@ import { GoVersions, GoTools } from "react-icons/go";
 const Services = () => {
   return (
     <>
-      <div className=" container mx-auto   lg:px-20 lg:py-20 my-10  lg:h-screen  ">
-        <div className="flex flex-col lg:flex-row">
+      <div className=" flex justify-center items-center h-screen">
+      <div className=" container mx-auto px-10   ">
+      <Badges>Services</Badges>
+        <div className="flex flex-col lg:flex-row ">
           <div className="  lg:basis-5/12 w-full  px-5 ">
-            <Badges>Services</Badges>
-            <div className="">
-              <div className="">
-                <img
-                  src="https://wordpressriverthemes.com/HTML/itsme/assets/images/services/services-dark.png"
-                  alt=""
-                />
-              </div>
-              {/* <div className="">
+          {/* <div className="">
                 <img
                   src="https://wordpressriverthemes.com/HTML/itsme/assets/images/services/shape-two-dark.png"
                   alt=""
                 />
               </div>
-              <div className="">
+              <div className="absolute">
                 <img
                   src="https://wordpressriverthemes.com/HTML/itsme/assets/images/services/shape-one-dark.png"
                   alt=""
                 />
               </div> */}
-            </div>
+              <div className="absolute">
+                <img
+                  src="https://wordpressriverthemes.com/HTML/itsme/assets/images/services/services-dark.png"
+                  alt=""
+                />
+              </div>
           </div>
-          <div className="   mt-0  md:mt-96 lg:mt-32  lg:basis-7/12   ">
-            <h1 className=" font-serif text-4xl font-extrabold leading-relaxed">
+          <div className="   lg:basis-7/12    ">
+            <h1 className=" font-serif text-2xl  lg:text-4xl font-extrabold leading-relaxed">
               What <b className="text-[#DF5646]">Services</b> I Provide To My
               Clients In Here.
             </h1>
@@ -82,6 +81,7 @@ const Services = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

@@ -3,12 +3,12 @@ import Badges from "../Components/Badges";
 
 const Skills = () => {
   return (
-    <>
-      <div className=" container mx-auto   lg:px-20 lg:py-20 my-10 lg:h-screen   ">
+    <div className=" flex justify-center items-center h-screen">
+      <div className="container mx-auto px-10    ">
         <div className="flex flex-col lg:flex-row">
           <div className=" lg:basis-5/12 w-full px-5 ">
             <Badges>Skills</Badges>
-            <h1 className=" font-serif text-3xl font-extrabold leading-relaxed">
+            <h1 className=" font-serif text-2xl lg:text-3xl font-extrabold leading-relaxed">
               As A Developer, I Am Good At Fit With Few  <span className="text-[#DF5646]">Skills.</span>
             </h1>
             <p>
@@ -89,7 +89,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -5,12 +5,15 @@ import {FaLinkedinIn,FaFacebookF,FaGithub,FaTwitter} from "react-icons/fa"
 
 const About = () => {
   return (
-    <>
-      <div className=" container mx-auto  lg:px-20 my-10  lg:h-screen   ">
-        <div className="flex flex-col lg:flex-row">
-          <div className=" lg:basis-5/12 w-full px-5 ">
+    <div className="flex justify-center items-center h-screen">
+
+      <div className=" container mx-auto px-10  ">
+        <div className="flex flex-col lg:flex-row  ">
+          <div className=" lg:basis-5/12 ">
+
+    
             <Badges>About me</Badges>
-            <h1 className=" font-serif text-6xl font-extrabold leading-relaxed ">
+            <h1 className=" font-serif text-4xl md:text-5xl lg:text-6xl font-extrabold leading-relaxed ">
               Hi,
               <br />
               I'm <span className=" tracking-wider text-[#DF5646] "> Niharika </span>
@@ -50,33 +53,33 @@ const About = () => {
             </div>
           </div>
 
-          <div className=" lg:basis-7/12 ">
-            <div className="">
-              <div className=" ">
+          <div className="relative lg:basis-7/12  ">
+          <div className=" absolute w-7 md:w-20 lg:w-16 h-4 z-50 left-5  -top-1 md:-top-5 lg:top-3">
+                <img
+                  src="https://wordpressriverthemes.com/HTML/itsme/assets/images/about/shape-one-dark.png"
+                  className=" ms-auto "
+                  alt=""
+                />
+              </div>
+              <div className=" absolute z-50 left-3/4 -top-2 md:top-0 ">
+                <img
+                  src="https://wordpressriverthemes.com/HTML/itsme/assets/images/about/shape-two-dark.png"
+                  alt=""
+                />
+              </div>
+              <div className="absolute ">
                 <img
                   src="https://wordpressriverthemes.com/HTML/itsme/assets/images/about/about-dark.png"
                   className=""
                   alt="aboutIamage"
                 />
               </div>
-              {/* <div className=" w-10 lg:w-16 h-4  ">
-                <img
-                  src="https://wordpressriverthemes.com/HTML/itsme/assets/images/about/shape-one-dark.png"
-                  className=" "
-                  alt=""
-                />
-              </div>
-              <div className="  ">
-                <img
-                  src="https://wordpressriverthemes.com/HTML/itsme/assets/images/about/shape-two-dark.png"
-                  alt=""
-                />
-              </div> */}
-            </div>
+              
+           
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
