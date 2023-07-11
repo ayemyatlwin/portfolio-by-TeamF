@@ -5,9 +5,9 @@ import {FaLinkedinIn,FaFacebookF,FaGithub,FaTwitter} from "react-icons/fa"
 
 const About = () => {
   return (
-    <>
+    <div className="flex justify-center items-center h-screen">
 
-      <div className=" container mx-auto px-10   h-screen   ">
+      <div className=" container mx-auto px-10  ">
         <div className="flex flex-col lg:flex-row  ">
           <div className=" lg:basis-5/12 ">
 
@@ -79,7 +79,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
