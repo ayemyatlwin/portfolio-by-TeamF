@@ -5,7 +5,6 @@ import Typing from "./Typing";
 import { motion } from "framer-motion";
 
 const WeaponsDetail = () => {
-  const [show, setShow] = useState(false);
 
   return (
     <div className=" basis-1/2">
@@ -20,7 +19,6 @@ const WeaponsDetail = () => {
         My
         <Typing
           typedText={" Favorite Tools "}
-          className={`${show ? "" : "hidden"}`}
         />
         Which I Used Everyday In My Life.
       </motion.p>

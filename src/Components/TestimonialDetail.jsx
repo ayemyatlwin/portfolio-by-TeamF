@@ -1,5 +1,5 @@
-import React from "react";
-//import { Helmet } from "react-helmet";
+import React, { useState } from "react";
+import Typing from "./Typing";
 import Button from "@mui/material/Button";
 import { BsPauseFill } from "react-icons/bs";
 import { useTheme } from "@mui/material/styles";
@@ -9,13 +9,13 @@ import Paper from "@mui/material/Paper";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 import Badges from "./Badges";
-import Typing from "./Typing";
 import { motion } from "framer-motion";
 import "../app.css";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const TestimonialDetail = () => {
+
   const images = [
     {
       id: 1,
@@ -65,8 +65,10 @@ const TestimonialDetail = () => {
         className="text-3xl font-medium mb-5 text-white"
       >
         What My Happy
-        <Typing typedText={" Clients "} />
-        Saying Their Services.
+        <Typing
+          typedText={" Favorite Tools "}
+        />
+                Saying Their Services.
       </motion.p>
       <motion.div
         initial={{ y: 30 }}

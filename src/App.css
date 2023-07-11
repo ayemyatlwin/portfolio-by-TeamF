@@ -28,7 +28,7 @@
   background-color: rgb(50 50 76); /* whole project bgColor */
   width: 100%;
   border-left: 0.02em solid transparent;
-  animation: typing 4s steps(30) infinite
+  animation: typing 4s steps(16) infinite;
 }
 
 @keyframes typing {

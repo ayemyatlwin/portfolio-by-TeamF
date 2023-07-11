@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const StayConnected = () => {
   return (
-    <div className="container mx-auto h-full lg:h-screen lg:px-32 relative xl:pt-44">
+    <div className="container mx-auto h-screen lg:px-32 relative xl:pt-44">
       <motion.img
         initial={{ opacity: 0, scale: 0, x: -100 }}
         whileInView={{ opacity: 1, scale: 1, x: 0 }}
