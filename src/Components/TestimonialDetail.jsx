@@ -64,11 +64,7 @@ const TestimonialDetail = () => {
         viewport={{ once: false }}
         className="text-3xl font-medium mb-5 text-white"
       >
-        What My Happy
-        <Typing
-          typedText={" Favorite Tools "}
-        />
-                Saying Their Services.
+        What My Happy <Typing>Clients</Typing> Saying Their Services.
       </motion.p>
       <motion.div
         initial={{ y: 30 }}
