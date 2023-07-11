@@ -1,5 +1,6 @@
 import React from "react";
 import Badges from "../Components/Badges";
+import ReactTyped from "react-typed";
 
 const Skills = () => {
   return (
@@ -9,7 +10,10 @@ const Skills = () => {
           <div className=" basis-5/12 w-full ">
             <Badges>Skills</Badges>
             <h1 className=" font-serif text-2xl lg:text-3xl font-extrabold leading-relaxed">
-              As A Developer, I Am Good At Fit With Few  <span className="text-[#DF5646]">Skills.</span>
+              As A Developer, I Am Good At Fit With Few  <span className="text-[#DF5646]">
+              <ReactTyped strings={["Skills."]} typeSpeed={150} showCursor={false} loop loopCount={3}/>
+
+                </span>
             </h1>
             <p>
               All developers have good skills to make sure satisfied their

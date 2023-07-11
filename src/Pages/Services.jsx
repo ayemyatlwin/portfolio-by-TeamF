@@ -3,6 +3,7 @@ import Badges from "../Components/Badges";
 import { MdWeb } from "react-icons/md";
 import { DiResponsive } from "react-icons/di";
 import { GoVersions, GoTools } from "react-icons/go";
+import ReactTyped from "react-typed";
 
 const Services = () => {
   return (
@@ -36,7 +37,10 @@ const Services = () => {
           </div>
           <div className=" basis-5/12  ">
             <h1 className=" font-serif text-2xl  lg:text-4xl font-extrabold leading-relaxed">
-              What <b className="text-[#DF5646]">Services</b> I Provide To My
+              What <b className="text-[#DF5646]">
+              <ReactTyped strings={["Services"]} typeSpeed={100} showCursor={false} loop loopCount={3} />
+                
+                </b> I Provide To My
               Clients In Here.
             </h1>
             <p className=" tracking-wider my-3 text-[18px] text-[#bebfbf] font-sans leading-relaxed">

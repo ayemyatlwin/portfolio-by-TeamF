@@ -2,6 +2,7 @@ import React from "react";
 import Badges from "../Components/Badges";
 import {BsArrowRightShort} from "react-icons/bs"
 import {FaLinkedinIn,FaFacebookF,FaGithub,FaTwitter} from "react-icons/fa"
+import ReactTyped from "react-typed";
 
 const About = () => {
   return (
@@ -13,7 +14,9 @@ const About = () => {
             <h1 className=" font-serif text-4xl  lg:text-6xl font-extrabold leading-relaxed ">
               Hi,
               <br />
-              I'm <span className=" tracking-wider text-[#DF5646] "> Niharika </span>
+              I'm <span className=" tracking-wider text-[#DF5646] "> 
+              <ReactTyped strings={["Niharika"]} typeSpeed={150} showCursor={false} loop loopCount={3}/>
+               </span>
             </h1>
             <h3 className=" tracking-wide  leading-relaxed text-2xl font-sans ">
               Frontend Web Developer
