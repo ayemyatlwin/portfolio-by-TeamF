@@ -105,7 +105,7 @@ const TestimonialDetail = () => {
                 </div>
               ))}
             </AutoPlaySwipeableViews>
-            <div className="myDarkBlue basis-3/4 flex flex-col items-start ">
+            <div className=" basis-3/4 flex flex-col items-start ">
               <Paper
                 square
                 elevation={0}
