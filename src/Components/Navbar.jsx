@@ -48,8 +48,18 @@ const Navbar = ({ ColorModeContext }) => {
               )}
             </IconButton>
           </div>
+          <button
+          className="m-0 p-0 right-[50px] border-none "
+          // onClick={toggleDrawer("right", true)}
+        >
+          <span className="hamburger">
+            <span className="top-bun"></span>
+            <span className="meat"></span>
+            <span className="bottom-bun"></span>
+          </span>
+        </button>
 
-          <Sidebar/>
+          {/* <Sidebar/> */}
         </div>
       </div>
     </header>
