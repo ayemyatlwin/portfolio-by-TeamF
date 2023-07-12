@@ -13,7 +13,7 @@ const ContactMeDetail = () => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: false }}
-        className="text-3xl font-medium mb-5 text-white"
+        className="text-3xl font-medium mb-5"
       >
         Estimate Your Project?
         <br />
@@ -28,21 +28,21 @@ const ContactMeDetail = () => {
       >
         <input
           type="text"
-          className=" border-b border-[#A3A5A7] focus:border-[#df5646] outline-none h-10 w-full"
+          className=" border-b bg-transparent border-[#A3A5A7] focus:border-[#df5646] outline-none h-10 w-full"
           placeholder="What's your name?"
           name=""
           id=""
         />
         <input
           type="text"
-          className=" border-b border-[#A3A5A7] focus:border-[#df5646] outline-none h-10 w-full"
+          className=" border-b bg-transparent border-[#A3A5A7] focus:border-[#df5646] outline-none h-10 w-full"
           placeholder="Your email?"
           name=""
           id=""
         />
         <input
           type="text"
-          className=" border-b border-[#A3A5A7] focus:border-[#df5646] outline-none h-10 w-full"
+          className=" border-b bg-transparent border-[#A3A5A7] focus:border-[#df5646] outline-none h-10 w-full"
           placeholder="Tell me about your project"
           name=""
           id=""

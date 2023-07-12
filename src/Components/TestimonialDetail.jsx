@@ -62,9 +62,9 @@ const TestimonialDetail = () => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: false }}
-        className="text-3xl font-medium mb-5 text-white"
+        className="text-3xl font-medium mb-5 "
       >
-        What My Happy <Typing>Clients</Typing> Saying Their Services.
+        What My Happy <Typing bgLight={"bg-[#ffffff]"} bgDark={"bg-[#3c3b5a]"}>Clients</Typing> Saying Their Services.
       </motion.p>
       <motion.div
         initial={{ y: 30 }}
@@ -105,7 +105,7 @@ const TestimonialDetail = () => {
                 </div>
               ))}
             </AutoPlaySwipeableViews>
-            <div className="myDarkBlue basis-3/4 flex flex-col items-start ">
+            <div className=" basis-3/4 flex flex-col items-start ">
               <Paper
                 square
                 elevation={0}

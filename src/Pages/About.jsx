@@ -3,6 +3,7 @@ import Badges from "../Components/Badges";
 import {BsArrowRightShort} from "react-icons/bs"
 import {FaLinkedinIn,FaFacebookF,FaGithub,FaTwitter} from "react-icons/fa"
 import Buttons from "../Components/Buttons";
+import ReactTyped from "react-typed";
 
 const About = () => {
   return (
@@ -11,10 +12,12 @@ const About = () => {
         <div className="flex flex-col lg:flex-row lg:justify-center">
           <div className=" basis-5/12 w-full pl-0 lg:pl-12 ">
             <Badges>About me</Badges>
-            <h1 className=" font-serif text-6xl font-extrabold leading-relaxed ">
+            <h1 className=" font-serif text-4xl  lg:text-6xl font-extrabold leading-relaxed ">
               Hi,
               <br />
-              I'm <span className=" tracking-wider text-[#DF5646] "> Niharika </span>
+              I'm <span className=" tracking-wider text-[#DF5646] "> 
+              <ReactTyped strings={["Niharika"]} typeSpeed={150} showCursor={false} loop loopCount={3}/>
+               </span>
             </h1>
             <h3 className=" tracking-wide  leading-relaxed text-2xl font-sans ">
               Frontend Web Developer
@@ -30,7 +33,7 @@ const About = () => {
             </p>
             {/* <button
               type="button"
-              class="text-white tracking-wider bg-[#DF5646] hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300  rounded-lg  px-5 py-3 my-10 text-center inline-flex items-center capitalize "
+              className="text-white tracking-wider bg-[#DF5646] hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300  rounded-lg  px-5 py-3 my-10 text-center inline-flex items-center capitalize "
             >
               Hire me
               <BsArrowRightShort className=" bg-inherit w-7 h-7 text-white ms-3"/>

@@ -14,9 +14,9 @@ const WeaponsDetail = () => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: false }}
-        className="text-3xl font-medium mb-5 text-white"
+        className="text-3xl font-medium mb-5"
       >
-        My <Typing>Favorite Tools</Typing> Which I Used Everyday In My Life.
+        My <Typing bgLight={"bg-[#fafafa]"} bgDark={"bg-[#32324c]"}>Favorite Tools</Typing> Which I Used Everyday In My Life.
       </motion.p>
       <motion.div
         initial={{ y: 30 }}
