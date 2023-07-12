@@ -1,5 +1,6 @@
 import React from "react";
 import Badges from "../Components/Badges";
+import ReactTyped from "react-typed";
 
 const Skills = () => {
   return (
@@ -8,23 +9,26 @@ const Skills = () => {
         <div className="flex flex-col lg:flex-row">
           <div className=" basis-5/12 w-full ">
             <Badges>Skills</Badges>
-            <h1 className=" font-serif text-2xl lg:text-3xl font-extrabold leading-relaxed">
-              As A Developer, I Am Good At Fit With Few  <span className="text-[#DF5646]">Skills.</span>
+            <h1 className="mt-11 mb-7 text-3xl md:text-4xl font-bold font-serif leading-loose">
+              As A Developer, I Am Good At Fit With Few  <span className="text-[#DF5646]">
+              <ReactTyped strings={["Skills."]} typeSpeed={150} showCursor={false} loop loopCount={3}/>
+
+                </span>
             </h1>
-            <p>
+            <p className="paragraph-1 my-[2.7rem]">
               All developers have good skills to make sure satisfied their
-              clients, As a web-developer I am also specialized in few <span className="text-[#DF5646]">skills.</span>
+              clients, As a web-developer I am also specialized in few <span className="text-[#DF5646] font-medium">skills.</span>
             </p>
-            <div className=" flex flex-col my-5">
+            <div className=" flex flex-col ">
               <div>
                 <div className="mb-1 text-base font-medium ">
                 Web Design
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 ">
-                  <span
-                    className="bg-blue-600 h-2.5 rounded-full "
-                    style={{width:'45%'}}
-                  ></span>
+                  <div
+                    className="bg-blue-600 h-2.5 rounded-full animated "
+                    style={{width:'80%'}}
+                  ></div>
                 </div>
               </div>
               <div>
@@ -32,10 +36,10 @@ const Skills = () => {
                 Creative
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 ">
-                  <span
-                    className="bg-blue-600 h-2.5 rounded-full "
-                    style={{width:'45%'}}
-                  ></span>
+                  <div
+                    className="bg-blue-600 h-2.5 rounded-full animated "
+                    style={{width:'65%'}}
+                  ></div>
                 </div>
               </div>
               <div>
@@ -43,10 +47,10 @@ const Skills = () => {
                 Maintenance
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 ">
-                  <span
-                    className="bg-blue-600 h-2.5 rounded-full "
-                    style={{width:'45%'}}
-                  ></span>
+                  <div
+                    className="bg-blue-600 h-2.5 rounded-full animated "
+                    style={{width:'75%'}}
+                  ></div>
                 </div>
               </div>
               <div>
@@ -54,17 +58,17 @@ const Skills = () => {
                 Problem Solving
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 ">
-                  <span
-                    className="bg-blue-600 h-2.5 rounded-full "
-                    style={{width:'45%'}}
-                  ></span>
+                  <div
+                    className="bg-blue-600 h-2.5 rounded-full animated "
+                    style={{width:'85%'}}
+                  ></div>
                 </div>
               </div>
             </div>
           </div>
 
           <div className=" basis-7/12 ">
-            <div className="relative mt-10 pl-0 lg:pl-14">
+            <div className="relative pl-0 lg:pl-14">
               <div className="absolute ">
                 <img
                   src="https://wordpressriverthemes.com/HTML/itsme/assets/images/about/about-dark.png"

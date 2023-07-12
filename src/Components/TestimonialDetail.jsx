@@ -11,6 +11,7 @@ import { autoPlay } from "react-swipeable-views-utils";
 import Badges from "./Badges";
 import { motion } from "framer-motion";
 import "../app.css";
+import ReactTyped from "react-typed";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -55,7 +56,7 @@ const TestimonialDetail = () => {
 
   return (
     <div className="basis-1/3 mb-20 pb-10">
-      <Badges> Clients </Badges>
+      <Badges> Testimonial </Badges>
       <motion.p
         initial={{ y: 30 }}
         whileInView={{ y: 0 }}
@@ -68,6 +69,7 @@ const TestimonialDetail = () => {
           Clients
         </Typing>{" "}
         Saying Their Services.
+
       </motion.p>
       <motion.div
         initial={{ y: 30 }}
@@ -75,7 +77,7 @@ const TestimonialDetail = () => {
         transition={{ duration: 0.6, delay: 0.5 }}
         viewport={{ once: false }}
       >
-        <p className=" mb-5 text-[#BEBFBF]">
+        <p className=" paragraph-1 my-10">
           Really they guy is amazing , he saved my times and properly have
           completed my requirement with great effort. I appreciate to him for
           web &amp; app design, he is good at fit.
@@ -119,6 +121,7 @@ const TestimonialDetail = () => {
               >
                 <p className=" block">{images[activeStep].name}</p>
                 <p className=" block">
+
                   CEO of{" "}
                   <span className="text-[#df5646]">
                     {images[activeStep].Company}
