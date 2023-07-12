@@ -9,6 +9,9 @@
   --heading-color: #1D2043;
   --primary-color: #DF5646;
   --light-color: #FAFAFA;
+  --resume-text-color: #78add9;
+  --behance-color: #0057ff;
+  --dribble-color: #ea4c89;
   --base-font: 'Poppins', sans-serif;
   --heading-font: 'Playfair Display', serif;
 }
@@ -177,6 +180,37 @@ a:hover {
   display: none;
 } 
 
+
+/** For tablet screen **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .css-37vzma .nav-header{
+    background-color: #32324c !important;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
+  }
+  
+  .css-1aw6dkm .nav-header{
+    background-color: #fafafa !important;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
+  }
+  
+}
+
+/** For phone screen **/
+@media (max-width: 768px) {
+  .css-37vzma .nav-header{
+    background-color: #32324c !important;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
+  }
+  
+  .css-1aw6dkm .nav-header{
+    background-color: #fafafa !important;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
+  }
+  #fp-nav.fp-right{
+    right: 10px !important;
+  }
+}
+
 /* *********** dark theme ************* */
 .css-37vzma .fullpage-wrapper > div:nth-child(1) > div{
   /* background-color: #333 !important; */
@@ -191,8 +225,11 @@ a:hover {
 .css-37vzma .fullpage-wrapper > div:nth-child(4) > div{
   background-color: #32324c !important;
 }
-.css-37vzma .fullpage-wrapper > div:nth-child(1) > div{
+.css-37vzma .fullpage-wrapper > div:nth-child(5) > div{
   background-color: #3c3b5a !important;
+}
+.css-37vzma .fullpage-wrapper > div:nth-child(6) > div{
+  background-color: #32324c !important;
 }
 
 /* *********** light theme ************* */
@@ -208,13 +245,131 @@ a:hover {
 .css-1aw6dkm .fullpage-wrapper > div:nth-child(4) > div{
   background-color: #fafafa !important;
 }
-.css-1aw6dkm .fullpage-wrapper > div:nth-child(1) > div{
+.css-1aw6dkm .fullpage-wrapper > div:nth-child(5) > div{
   background-color: #fff !important;
 }
-
+.css-1aw6dkm .fullpage-wrapper > div:nth-child(6) > div{
+  background-color: #fafafa !important;
+}
 
 /* *********** drawer ************* */
 .css-f2jcso-MuiPaper-root-MuiDrawer-paper{
   background-color: var(--light-color) !important;
   color: var(--heading-color) !important;
+}
+
+/* css */
+.header-2{
+  @apply text-3xl md:text-4xl font-bold font-serif capitalize mt-11 mb-2
+}
+.header-5{
+  @apply text-base font-medium
+}
+.paragraph-1{
+  @apply text-base text-[#bebfbf] leading-8 font-sans
+}
+
+/* carousel */
+.css-37vzma .slick-dots li button:before{
+  font-size: 12px !important;
+  color: white !important;
+  margin-top: 40px;
+}
+
+.css-1aw6dkm .slick-dots li button:before{
+  font-size: 12px !important;
+  color: black !important;
+  margin-top: 40px;
+}
+
+.slick-dots li.slick-active button:before{
+  color: var(--primary-color) !important;
+  opacity: 1 !important;
+  border: 1px solid #d8d8d8;
+  border-radius: 50%;
+}
+
+.css-1aw6dkm .slick-slide{
+  background-color: white !important;
+}
+
+/* carousel image */
+
+.carousel-image {
+  margin-top: 30px;
+}
+
+.carousel-image .image {
+  height: 500px;
+  display: flex;
+  transition: 1.5s;
+  position: relative;
+  align-items: center;
+  background-size: 100%;
+  justify-content: center;
+  border: 10px solid var(--light-color);
+}
+
+.carousel-image .image:before {
+  content: '';
+  width: 100%;
+  opacity: 0;
+  height: 100%;
+  transition: 0.5s;
+  position: absolute;
+  background: var(--heading-color);
+}
+
+.carousel-image .theme-btn {
+  opacity: 0;
+}
+
+.carousel-image .image:hover:before {
+  opacity: 0.65;
+}
+
+.carousel-image .image:hover .theme-btn {
+  opacity: 1;
+}
+
+.theme-btn {
+  z-index: 1;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.5s;
+  position: relative;
+  text-align: center;
+  padding: 10px 22px;
+  border-radius: 15px;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: 0 16px 16px rgba(116, 113, 113, 0.16);
+}
+
+.theme-btn:before {
+  content: '';
+  width: 44px;
+  z-index: -1;
+  left: 5px;
+  opacity: 0.2;
+  transition: 0.75s;
+  background: white;
+  position: absolute;
+  border-radius: 10px;
+  height: calc(100% - 10px);
+}
+
+.theme-btn:hover:before {
+  left: calc(100% - 49px);
+}
+
+.theme-btn:hover .right-arrow {
+  margin-left: 22px;
+  margin-right: -10px;
+  transition: 0.75s;
 }

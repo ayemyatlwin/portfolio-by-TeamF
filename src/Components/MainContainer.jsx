@@ -8,6 +8,8 @@ import Testimonial from "../Pages/Testimonial";
 import Navbar from "./Navbar";
 import Weapons from "../Pages/Weapons";
 import ContactMe from "../Pages/ContactMe";
+import Resume from "../Pages/Resume";
+import Portfolio from "../Pages/Portfolio";
 // import StayConnected from "../Pages/StayConnected";
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
@@ -25,6 +27,12 @@ function MyMain() {
         component: <Services />,
       },
       {
+        component: <Resume />,
+      },
+      {
+        component: <Portfolio />,
+      },
+      {
         component: <Testimonial />,
       },
       {
@@ -39,7 +47,7 @@ function MyMain() {
   if (!fullpages.length) {
     return null;
   }
-  const anchors = ["About", "Services", "Testimonial", "Weapons", "ContactMe"];
+  const anchors = ["About", "Services", "Resume", "Portfolio", "Testimonial", "Weapons", "ContactMe"];
   return (
     <div className="App">
       <Navbar ColorModeContext={ColorModeContext}/>

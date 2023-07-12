@@ -16,8 +16,8 @@ const Navbar = ({ ColorModeContext }) => {
     top: "0",
   };
   return (
-    <header style={headerStyle}>
-      <div className=" container-fluid mx-auto px-5 lg:px-[60px] py[20px] flex justify-between items-center">
+    <header style={headerStyle} className="nav-header">
+      <div className=" container-fluid mx-auto px-5 md:px-12 lg:px-[60px] py[20px] flex justify-between items-center">
         <div className="">
           <a href="#About" className=" mx-5 hover:text-[var(--primary-color)]">
             <h1 className="logo">
@@ -26,7 +26,7 @@ const Navbar = ({ ColorModeContext }) => {
           </a>
         </div>
         <div className="flex justify-center items-center">
-          <div className=" mx-[20px] lg:me-[50px] ">
+          <div className=" mx-[20px] lg:me-[50px] invisible lg:visible">
             <a
               href="#ContactMe"
               className="flex items-center mx-5 text-[0.8rem] font-medium hover:text-[var(--primary-color)]"
