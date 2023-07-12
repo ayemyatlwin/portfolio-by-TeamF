@@ -9,17 +9,17 @@ const Skills = () => {
         <div className="flex flex-col lg:flex-row">
           <div className=" basis-5/12 w-full ">
             <Badges>Skills</Badges>
-            <h1 className=" font-serif text-2xl lg:text-3xl font-extrabold leading-relaxed">
+            <h1 className="mt-11 mb-7 text-3xl md:text-4xl font-bold font-serif leading-loose">
               As A Developer, I Am Good At Fit With Few  <span className="text-[#DF5646]">
               <ReactTyped strings={["Skills."]} typeSpeed={150} showCursor={false} loop loopCount={3}/>
 
                 </span>
             </h1>
-            <p>
+            <p className="paragraph-1 my-[2.7rem]">
               All developers have good skills to make sure satisfied their
-              clients, As a web-developer I am also specialized in few <span className="text-[#DF5646]">skills.</span>
+              clients, As a web-developer I am also specialized in few <span className="text-[#DF5646] font-medium">skills.</span>
             </p>
-            <div className=" flex flex-col my-5">
+            <div className=" flex flex-col ">
               <div>
                 <div className="mb-1 text-base font-medium ">
                 Web Design
@@ -68,7 +68,7 @@ const Skills = () => {
           </div>
 
           <div className=" basis-7/12 ">
-            <div className="relative mt-10 pl-0 lg:pl-14">
+            <div className="relative pl-0 lg:pl-14">
               <div className="absolute ">
                 <img
                   src="https://wordpressriverthemes.com/HTML/itsme/assets/images/about/about-dark.png"

@@ -2,6 +2,7 @@ import React from "react";
 import Badges from "./Badges";
 import { motion } from "framer-motion";
 import { HiArrowSmRight } from "react-icons/hi";
+import ReactTyped from "react-typed";
 
 const PortfolioText = () => {
   return (
@@ -16,8 +17,8 @@ const PortfolioText = () => {
             viewport={{ once: false }}
             className="header-2"
           >
-            some of my creative
-            <span className="text-[var(--primary-color)]"> works.</span>
+            some of my creative&nbsp;
+            <span className="text-[var(--primary-color)]"><ReactTyped strings={["works."]} typeSpeed={150} showCursor={false} loop loopCount={3}/></span>
           </motion.h2>
         </div>
         <motion.p

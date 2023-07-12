@@ -220,6 +220,12 @@ a:hover {
 .css-37vzma .fullpage-wrapper > div:nth-child(6) > div{
   background-color: #32324c !important;
 }
+.css-37vzma .fullpage-wrapper > div:nth-child(7) > div{
+  background-color: #3c3b5a !important;
+}
+.css-37vzma .fullpage-wrapper > div:nth-child(8) > div{
+  background-color: #32324c !important;
+}
 
 /* *********** light theme ************* */
 .css-1aw6dkm .fullpage-wrapper > div:nth-child(1) > div{
@@ -238,6 +244,12 @@ a:hover {
   background-color: #fff !important;
 }
 .css-1aw6dkm .fullpage-wrapper > div:nth-child(6) > div{
+  background-color: #fafafa !important;
+}
+.css-1aw6dkm .fullpage-wrapper > div:nth-child(7) > div{
+  background-color: #fff !important;
+}
+.css-1aw6dkm .fullpage-wrapper > div:nth-child(8) > div{
   background-color: #fafafa !important;
 }
 

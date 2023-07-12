@@ -28,14 +28,13 @@ function MyMain() {
         component: <Services />,
       },
       {
-        component: <Resume />,
+        component: <Skills />,
       },
       {
-         component: <Skills/>,
+         component: <Resume/>,
       },
       {
         component: <Portfolio />,
-       
       },
       {
         component: <Testimonial />,
@@ -52,7 +51,7 @@ function MyMain() {
   if (!fullpages.length) {
     return null;
   }
-  const anchors = ["About", "Services","Skills", "Testimonial", "Weapons", "ContactMe"];
+  const anchors = ["About", "Services","Skills", "Resume", "Portfolio", "Testimonial", "Weapons", "ContactMe"];
   return (
     <div className="App">
       <Navbar ColorModeContext={ColorModeContext}/>

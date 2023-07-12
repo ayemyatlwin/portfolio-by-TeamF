@@ -3,6 +3,7 @@ import { BsArrowRight } from "react-icons/bs";
 import Badges from "./Badges";
 import Typing from "./Typing";
 import { motion } from "framer-motion";
+import ReactTyped from "react-typed";
 
 const WeaponsDetail = () => {
 
@@ -14,9 +15,10 @@ const WeaponsDetail = () => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: false }}
-        className="text-3xl font-medium mb-5"
+        className="header-2 my-5"
       >
-        My <Typing bgLight={"bg-[#fafafa]"} bgDark={"bg-[#32324c]"}>Favorite Tools</Typing> Which I Used Everyday In My Life.
+        My <span className="text-[var(--primary-color)]"><ReactTyped strings={["Favorite Tools"]} typeSpeed={150} showCursor={false} loop loopCount={3}/></span> Which I Used Everyday In My Life.
+        {/* <Typing bgLight={"bg-[#fafafa]"} bgDark={"bg-[#32324c]"}>Favorite Tools</Typing> */} 
       </motion.p>
       <motion.div
         initial={{ y: 30 }}
@@ -24,7 +26,7 @@ const WeaponsDetail = () => {
         transition={{ duration: 0.6, delay: 0.2 }}
         viewport={{ once: false }}
       >
-        <p className=" mb-5 text-[#BEBFBF]">
+        <p className=" my-10 text-[#BEBFBF]">
           I always loved those software that I use in my work, because I am very
           good at these, these are the main tools of my design career those are
           help me for make sure my Clients satisfication.
