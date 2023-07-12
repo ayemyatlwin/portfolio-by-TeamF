@@ -32,7 +32,7 @@ function MyMain() {
       },
       {
          component: <Resume/>,
-      },
+     },      
       {
         component: <Portfolio />,
       },
@@ -48,10 +48,12 @@ function MyMain() {
       },
     ],
   };
+
   if (!fullpages.length) {
     return null;
   }
   const anchors = ["About", "Services","Skills", "Resume", "Portfolio", "Testimonial", "Weapons", "ContactMe"];
+
   return (
     <div className="App">
       <Navbar ColorModeContext={ColorModeContext}/>
@@ -67,12 +69,14 @@ function MyMain() {
         navigationTooltips={anchors}
         // sectionsColor={["#3c3b5a", "#32324c", "#3c3b5a", "#32324c","#3c3b5a"]}
         render={(comp) => (
-          <ReactFullpage.Wrapper>
-            {fullpages.map(({ component, i }) => (
-              <div key={i} className={SEL}>
+          <ReactFullpage.Wrapper key={comp.id} >
+            {fullpages.map(({ component, i }) => {
+              return(
+                <div key={i} className={SEL}>
                 {component}
               </div>
-            ))}
+              )
+              })}
           </ReactFullpage.Wrapper>
         )}
       />

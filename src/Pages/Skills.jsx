@@ -25,10 +25,10 @@ const Skills = () => {
                 Web Design
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 ">
-                  <span
-                    className="bg-blue-600 h-2.5 rounded-full "
-                    style={{width:'45%'}}
-                  ></span>
+                  <div
+                    className="bg-blue-600 h-2.5 rounded-full animated "
+                    style={{width:'80%'}}
+                  ></div>
                 </div>
               </div>
               <div>
@@ -36,10 +36,10 @@ const Skills = () => {
                 Creative
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 ">
-                  <span
-                    className="bg-blue-600 h-2.5 rounded-full "
-                    style={{width:'45%'}}
-                  ></span>
+                  <div
+                    className="bg-blue-600 h-2.5 rounded-full animated "
+                    style={{width:'65%'}}
+                  ></div>
                 </div>
               </div>
               <div>
@@ -47,10 +47,10 @@ const Skills = () => {
                 Maintenance
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 ">
-                  <span
-                    className="bg-blue-600 h-2.5 rounded-full "
-                    style={{width:'45%'}}
-                  ></span>
+                  <div
+                    className="bg-blue-600 h-2.5 rounded-full animated "
+                    style={{width:'75%'}}
+                  ></div>
                 </div>
               </div>
               <div>
@@ -58,10 +58,10 @@ const Skills = () => {
                 Problem Solving
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 ">
-                  <span
-                    className="bg-blue-600 h-2.5 rounded-full "
-                    style={{width:'45%'}}
-                  ></span>
+                  <div
+                    className="bg-blue-600 h-2.5 rounded-full animated "
+                    style={{width:'85%'}}
+                  ></div>
                 </div>
               </div>
             </div>
