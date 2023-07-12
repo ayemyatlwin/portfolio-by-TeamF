@@ -7,7 +7,7 @@ const Weapons = () => {
   return (
     <>
 
-      <div className="container mx-auto h-fit lg:h-screen flex flex-col lg:flex-row  justify-center items-center px-10 lg:px-32 py-10">
+      <div className="container mx-auto md:h-screen flex flex-col lg:flex-row justify-center items-center px-10 py-10 lg:px-32 mt-24 md:mt-0">
 
         <WeaponsDetail/>
         <WeaponsImg/>
@@ -17,3 +17,4 @@ const Weapons = () => {
 };
 
 export default Weapons;
+// container mx-auto h-fit lg:h-screen flex flex-col lg:flex-row justify-center items-center px-10 lg:px-32 py-10 mt-24 md:mt-0

@@ -54,7 +54,7 @@ const TestimonialDetail = () => {
   };
 
   return (
-    <div className="basis-1/3 mb-20 pb-10">
+    <div className="basis-1/3 w-full">
       <Badges> Testimonial </Badges>
       <motion.p
         initial={{ y: 30 }}

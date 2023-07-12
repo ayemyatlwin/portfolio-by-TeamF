@@ -8,7 +8,7 @@ import ReactTyped from "react-typed";
 const WeaponsDetail = () => {
 
   return (
-    <div className=" basis-1/2">
+    <div className=" basis-1/2 w-full">
       <Badges> My Weapons </Badges>
       <motion.p
         initial={{ y: 30 }}
@@ -35,7 +35,7 @@ const WeaponsDetail = () => {
           <a href="#" className=" underline hover:no-underline">
             Lets See My Work Process
           </a>
-          <BsArrowRight className="pl-3 hover:translate-x-3 w-[120%] lg:w-[55%] xl:w-[90%] absolute top-1 left-0 bg-transparent" />
+          <BsArrowRight className="pl-3 mt-1 hover:translate-x-3 w-[120%] lg:w-[55%] xl:w-[90%] absolute top-1 left-0 bg-transparent" />
         </div>
       </motion.div>
     </div>
