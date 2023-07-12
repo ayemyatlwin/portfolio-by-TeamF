@@ -2,14 +2,15 @@ import React from "react";
 import Badges from "../Components/Badges";
 import {BsArrowRightShort} from "react-icons/bs"
 import {FaLinkedinIn,FaFacebookF,FaGithub,FaTwitter} from "react-icons/fa"
+import Buttons from "../Components/Buttons";
 import ReactTyped from "react-typed";
 
 const About = () => {
   return (
-    <div className="flex justify-center items-center h-screen w-full md:max-w-3xl lg:max-w-screen-2xl px-3 md:px-4 lg:px-14 mx-auto">
-      <div className=" container ">
-        <div className="flex flex-col lg:flex-row">
-          <div className=" basis-5/12 w-full px-5 ">
+    <div className="flex justify-center items-center h-screen w-full md:max-w-3xl lg:max-w-screen-2xl my-40 md:my-0 px-1 md:px-4 lg:px-10 mx-auto"> 
+      <div className=" container  "> 
+        <div className="flex flex-col lg:flex-row lg:justify-center">
+          <div className=" basis-5/12 w-full pl-0 lg:pl-12 ">
             <Badges>About me</Badges>
             <h1 className=" font-serif text-4xl  lg:text-6xl font-extrabold leading-relaxed ">
               Hi,
@@ -30,13 +31,17 @@ const About = () => {
               <br />
               let's shake hands with me.
             </p>
-            <button
+            {/* <button
               type="button"
               className="text-white tracking-wider bg-[#DF5646] hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300  rounded-lg  px-5 py-3 my-10 text-center inline-flex items-center capitalize "
             >
               Hire me
               <BsArrowRightShort className=" bg-inherit w-7 h-7 text-white ms-3"/>
-            </button>
+            </button> */}
+            <div className="py-3 my-10">
+              <Buttons> <a href="#ContactMe" className="hover:text-white">hire me</a> <BsArrowRightShort className=" right-arrow w-7 h-7 text-white ms-3"/></Buttons>
+            </div>
+            
             <div className=" flex flex-row gap-3 items-end">
               <button type="button" className=" text-[#bebfbf] " >
                 <FaFacebookF className="w-5 h-5 my-2 mx-2 cursor-pointer "/>
@@ -53,23 +58,23 @@ const About = () => {
             </div>
           </div>
 
-          <div className=" basis-7/12 ">
-            <div className="relative mt-10 pl-0 lg:pl-14">
+          <div className=" basis-7/12">
+            <div className="relative pt-[60px] pl-0 lg:pl-14">
               <div className="absolute ">
                 <img
                   src="https://wordpressriverthemes.com/HTML/itsme/assets/images/about/about-dark.png"
-                  className=""
+                  className="w-[100%]"
                   alt="aboutIamage"
                 />
               </div>
-              <div className="absolute w-10 lg:w-16 h-4 left-40 top-1 lg:left-40 ">
+              <div className="absolute w-10 lg:w-16 h-4 left-16 top-16 md:left-40 md:top-20 lg:left-56 ">
                 <img
                   src="https://wordpressriverthemes.com/HTML/itsme/assets/images/about/shape-one-dark.png"
                   className=" "
                   alt=""
                 />
               </div>
-              <div className="absolute top-5 left-96 lg:top-0">
+              <div className="absolute top-10 right-20 md:top-14 md:right-44 2xl:right-64 2xl:top-16">
                 <img
                   src="https://wordpressriverthemes.com/HTML/itsme/assets/images/about/shape-two-dark.png"
                   alt=""

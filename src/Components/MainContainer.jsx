@@ -9,6 +9,8 @@ import Testimonial from "../Pages/Testimonial";
 import Navbar from "./Navbar";
 import Weapons from "../Pages/Weapons";
 import ContactMe from "../Pages/ContactMe";
+import Resume from "../Pages/Resume";
+import Portfolio from "../Pages/Portfolio";
 // import StayConnected from "../Pages/StayConnected";
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
@@ -26,7 +28,14 @@ function MyMain() {
         component: <Services />,
       },
       {
-        component: <Skills/>
+        component: <Resume />,
+      },
+      {
+         component: <Skills/>,
+      },
+      {
+        component: <Portfolio />,
+       
       },
       {
         component: <Testimonial />,
