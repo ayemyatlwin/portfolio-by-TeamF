@@ -10,7 +10,6 @@ import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 import Badges from "./Badges";
 import { motion } from "framer-motion";
-import "../app.css";
 import ReactTyped from "react-typed";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
