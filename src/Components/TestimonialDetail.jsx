@@ -11,6 +11,7 @@ import { autoPlay } from "react-swipeable-views-utils";
 import Badges from "./Badges";
 import { motion } from "framer-motion";
 import "../app.css";
+import ReactTyped from "react-typed";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -56,15 +57,17 @@ const TestimonialDetail = () => {
 
   return (
     <div className="basis-1/3 mb-20 pb-10">
-      <Badges> Clients </Badges>
+      <Badges> Testimonial </Badges>
       <motion.p
         initial={{ y: 30 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: false }}
-        className="text-3xl font-medium mb-5 "
+        className="header-2 mb-5 "
       >
-        What My Happy <Typing bgLight={"bg-[#ffffff]"} bgDark={"bg-[#3c3b5a]"}>Clients</Typing> Saying Their Services.
+        What My Happy <span className="text-[var(--primary-color)]"><ReactTyped strings={["Client"]} typeSpeed={150} showCursor={false} loop loopCount={3}/></span> Saying Their Services.
+        {/* <Typing bgLight={"bg-[#ffffff]"} bgDark={"bg-[#3c3b5a]"}>Clients</Typing> */} 
+        
       </motion.p>
       <motion.div
         initial={{ y: 30 }}
@@ -72,7 +75,7 @@ const TestimonialDetail = () => {
         transition={{ duration: 0.6, delay: 0.5 }}
         viewport={{ once: false }}
       >
-        <p className=" mb-5 text-[#BEBFBF]">
+        <p className=" paragraph-1 my-10">
           Really they guy is amazing , he saved my times and properly have
           completed my requirement with great effort. I appreciate to him for
           web &amp; app design, he is good at fit.
@@ -113,8 +116,8 @@ const TestimonialDetail = () => {
                   bgcolor: "background.default",
                 }}
               >
-                <p className="text-white block">{images[activeStep].name}</p>
-                <p className="text-white block">
+                <p className="block">{images[activeStep].name}</p>
+                <p className="block">
                   CEO of{" "}
                   <span className="text-[#df5646]">
                     {images[activeStep].Company}
