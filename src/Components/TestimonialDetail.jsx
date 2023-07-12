@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Typing from "./Typing";
 import Button from "@mui/material/Button";
 import { BsPauseFill } from "react-icons/bs";
@@ -16,7 +16,6 @@ import ReactTyped from "react-typed";
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const TestimonialDetail = () => {
-
   const images = [
     {
       id: 1,
@@ -63,11 +62,14 @@ const TestimonialDetail = () => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: false }}
-        className="header-2 mb-5 "
+        className=" font-serif text-3xl font-medium mb-5 "
       >
-        What My Happy <span className="text-[var(--primary-color)]"><ReactTyped strings={["Client"]} typeSpeed={150} showCursor={false} loop loopCount={3}/></span> Saying Their Services.
-        {/* <Typing bgLight={"bg-[#ffffff]"} bgDark={"bg-[#3c3b5a]"}>Clients</Typing> */} 
-        
+        What My Happy{" "}
+        <Typing bgLight={"bg-[#fafafa]"} bgDark={"bg-[#32324c]"}>
+          Clients
+        </Typing>{" "}
+        Saying Their Services.
+
       </motion.p>
       <motion.div
         initial={{ y: 30 }}
@@ -113,11 +115,13 @@ const TestimonialDetail = () => {
                 square
                 elevation={0}
                 sx={{
-                  bgcolor: "background.default",
+                  bgcolor: (theme.palette.mode) === "light" ? "#fafafa" : "#32324c",
+                  //bgcolor: "background.default",
                 }}
               >
-                <p className="block">{images[activeStep].name}</p>
-                <p className="block">
+                <p className=" block">{images[activeStep].name}</p>
+                <p className=" block">
+
                   CEO of{" "}
                   <span className="text-[#df5646]">
                     {images[activeStep].Company}
@@ -149,7 +153,7 @@ const TestimonialDetail = () => {
               activeStep={activeStep}
               sx={{
                 bgcolor: "background.default",
-                p:"0"
+                p: "0",
               }}
             />
           </div>

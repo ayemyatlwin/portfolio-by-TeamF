@@ -15,10 +15,10 @@ const WeaponsDetail = () => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: false }}
-        className="header-2 my-5"
+        className="font-serif text-3xl font-medium mb-5"
       >
-        My <span className="text-[var(--primary-color)]"><ReactTyped strings={["Favorite Tools"]} typeSpeed={150} showCursor={false} loop loopCount={3}/></span> Which I Used Everyday In My Life.
-        {/* <Typing bgLight={"bg-[#fafafa]"} bgDark={"bg-[#32324c]"}>Favorite Tools</Typing> */} 
+        My <Typing bgLight={"bg-[#fff]"} bgDark={"bg-[#3c3b5a]"}>Favorite Tools</Typing> Which I Used Everyday In My Life.
+
       </motion.p>
       <motion.div
         initial={{ y: 30 }}
@@ -31,7 +31,7 @@ const WeaponsDetail = () => {
           good at these, these are the main tools of my design career those are
           help me for make sure my Clients satisfication.
         </p>
-        <div className=" flex justify-start items-center text-white hover:text-[#df5646] relative">
+        <div className=" flex justify-start items-center hover:text-[#df5646] relative">
           <a href="#" className=" underline hover:no-underline">
             Lets See My Work Process
           </a>

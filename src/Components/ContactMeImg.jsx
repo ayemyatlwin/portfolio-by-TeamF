@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const ContactMeImg = () => {
   return (
-      <div className="h-screen basis-2/4 flex justify-center items-center py-20">
+      <div className="h-screen md:h-fit basis-2/4 flex justify-center items-center ">
         <motion.img
         initial={{opacity:0,x:-200}}
         whileInView={{opacity:1,x:0}}
