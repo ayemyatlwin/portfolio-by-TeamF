@@ -11,10 +11,11 @@ const ContactMeImg = () => {
         transition={{duration:0.6}}
         viewport={{once:false}}
           src="https://wordpressriverthemes.com/HTML/itsme/assets/images/contact/contact.png"
-          alt="" className=" w-[350px] h-[500px]"
+          alt="" className=" flex flex-col self-center h-[80%] w-[90%] px-10"
         />
       </div>
   );
 };
 
 export default ContactMeImg;
+// w-[350px] h-[500px]

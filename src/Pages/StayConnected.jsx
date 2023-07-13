@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const StayConnected = () => {
   return (
-    <div className="container mx-auto h-screen lg:px-32 relative xl:pt-44">
+    <div className="container mx-auto relative mt-20">
       <motion.img
         initial={{ opacity: 0, scale: 0, x: -100 }}
         whileInView={{ opacity: 1, scale: 1, x: 0 }}
@@ -11,7 +11,7 @@ const StayConnected = () => {
         viewport={{ once: false }}
         src="https://wordpressriverthemes.com/HTML/itsme/assets/images/contact/footer-bottom-girl.png"
         alt=""
-        className="w-[250px] h-[400px] mt-10 md:h-[500px] absolute bottom-0 left-20 lg:left-56 z-10 bg-transparent"
+        className="h-[50%] lg:h-[90%] absolute bottom-0 left-20 lg:left-56 z-10 bg-transparent"
       />
       <div className="w-full h-full flex flex-col justify-between items-center">
         <motion.div
@@ -19,7 +19,7 @@ const StayConnected = () => {
           whileInView={{ y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: false }}
-          className="my-20 flex flex-col justify-center items-center mb-5"
+          className=" flex flex-col justify-center items-center mb-96 md:mb-32"
         >
           <h1 className="font-serif text-2xl mb-5 font-bold">Stay Connected</h1>
           <p className=" mb-2 text-[#A3A5A7]">Bangladesh</p>
