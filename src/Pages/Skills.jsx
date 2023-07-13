@@ -32,54 +32,77 @@ const Skills = () => {
             </motion.p>
             <div className=" flex flex-col ">
               <div>
-                <div className="mb-1 text-base font-medium ">
-                Web Design
+                <div className="mb-1 text-base flex justify-between font-medium ">
+                <span> Web Design </span>
+                <span>80% </span>
+                
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 ">
-                  <div
-                    className="bg-blue-600 h-2.5 rounded-full animated "
+                  <motion.div
+                  initial={{ x: -10,width:"0" }}
+                  whileInView={{ x: 0,width:"80%" }}
+                  transition={{ duration: 0.5, delay: 0.1}}
+                  viewport={{ once: false }}
+                    className="bg-[#75a9d6] h-2.5 rounded-full animated "
                     style={{width:'80%'}}
-                  ></div>
+                  ></motion.div>
                 </div>
               </div>
               <div>
-                <div className="mb-1 text-base font-medium ">
-                Creative
+                <div className="mb-1 text-base flex justify-between font-medium ">
+                <span>Creative</span>
+                <span>65%</span>
+                
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 ">
-                  <div
-                    className="bg-blue-600 h-2.5 rounded-full animated "
+                  <motion.div
+                  initial={{ x: -10,width:"0" }}
+                  whileInView={{ x: 0,width:"65%" }}
+                  transition={{ duration: 0.5, delay: 0.1}}
+                  viewport={{ once: false }}
+                    className="bg-[#75a9d6] h-2.5 rounded-full animated "
                     style={{width:'65%'}}
-                  ></div>
+                  ></motion.div>
                 </div>
               </div>
               <div>
-                <div className="mb-1 text-base font-medium ">
-                Maintenance
+                <div className="mb-1 text-base flex justify-between font-medium ">
+                <span>Maintenance</span>
+                <span>75%</span>
+                
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 ">
-                  <div
-                    className="bg-blue-600 h-2.5 rounded-full animated "
+                  <motion.div
+                  initial={{ x: -10,width:"0" }}
+                  whileInView={{ x: 0,width:"75%" }}
+                  transition={{ duration: 0.5, delay: 0.1}}
+                  viewport={{ once: false }}
+                    className="bg-[#75a9d6] h-2.5 rounded-full animated "
                     style={{width:'75%'}}
-                  ></div>
+                  ></motion.div>
                 </div>
               </div>
               <div>
-                <div className="mb-1 text-base font-medium ">
-                Problem Solving
+                <div className="mb-1 text-base flex justify-between font-medium ">
+                <span>Problem Solving</span>
+                <span>85%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 ">
-                  <div
-                    className="bg-blue-600 h-2.5 rounded-full animated "
+                  <motion.div
+                  initial={{ x: -10,width:"0" }}
+                  whileInView={{ x: 0,width:"85%" }}
+                  transition={{ duration: 0.5, delay: 0.1}}
+                  viewport={{ once: false }}
+                    className="bg-[#75a9d6] h-2.5 rounded-full animated "
                     style={{width:'85%'}}
-                  ></div>
+                  ></motion.div>
                 </div>
               </div>
             </div>
           </div>
 
           <div className=" basis-7/12 ">
-            <div className="relative pl-0 lg:pl-14">
+            <div className="relative ps-0 lg:ps-20">
               <div className="absolute ">
                 <img
                   src="https://wordpressriverthemes.com/HTML/itsme/assets/images/about/about-dark.png"
