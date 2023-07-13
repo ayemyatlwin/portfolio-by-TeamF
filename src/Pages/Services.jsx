@@ -64,7 +64,7 @@ const Services = () => {
             whileInView={{ y: 0 }}
             transition={{ duration: 0.5, delay: 0.1}}
             viewport={{ once: false }}
-            className=" tracking-wider my-3 paragraph-1 leading-relaxed">
+            className=" tracking-wider  my-3 paragraph-1 leading-relaxed">
               I always want to be able to meet the goals of my clients, <br /> I
               value my services as a developer through my work. <br /> You may
               like my <span className="text-[#DF5646]">services</span>.
@@ -77,7 +77,7 @@ const Services = () => {
             className="flex flex-col lg:flex-row justify-start lg:gap-14 w-full mt-10 leading-relaxed">
               <div className=" flex flex-col ">
                 <div className="flex flex-row gap-1 my-3">
-                  <button className="text-[#bebfbf]">
+                  <button className="text-base">
                     <MdWeb className=" w-10 h-10  cursor-pointer me-2  " />
                   </button>
                   <span className=" self-center text-xl font-sans font-medium ">
@@ -85,8 +85,8 @@ const Services = () => {
                   </span>
                 </div>
                 <div className="flex flex-row gap-1 my-3">
-                  <button className="text-[#bebfbf]">
-                    <DiResponsive className=" w-10 h-10  cursor-pointer me-2" />
+                  <button className="text-base">
+                    <DiResponsive className=" w-10 h-10 cursor-pointer me-2" />
                   </button>
                   <span className=" self-center text-xl font-sans font-medium ">
                     Responsive Design
@@ -95,7 +95,7 @@ const Services = () => {
               </div>
               <div className=" flex flex-col">
                 <div className="flex flex-row gap-1 my-3">
-                  <button className="text-[#bebfbf]">
+                  <button className="text-base">
                     <GoVersions className=" w-7 h-10  cursor-pointer me-2" />
                   </button>
                   <span className=" self-center text-xl font-sans font-medium ">
@@ -103,8 +103,8 @@ const Services = () => {
                   </span>
                 </div>
                 <div className="flex flex-row gap-1 my-3">
-                  <button className="text-[#bebfbf]">
-                    <GoTools className=" w-7 h-10  cursor-pointer me-2 text-[#bebfbf]" />
+                  <button className="text-base">
+                    <GoTools className=" w-7 h-10  cursor-pointer me-2 " />
                   </button>
                   <span className=" self-center text-xl font-sans font-medium ">
                     Maintenance

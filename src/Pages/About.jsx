@@ -38,7 +38,7 @@ const About = () => {
             whileInView={{ y: 0 }}
             transition={{ duration: 0.5, delay: 0.1}}
             viewport={{ once: false }}
-            className=" tracking-wider my-3 text-[18px] text-[#bebfbf] font-sans">
+            className=" tracking-wider my-3 text-[18px] paragraph-1 font-sans">
               Hey are you looking for developer to build your
               <br />
               <b className="text-[#DF5646]">
@@ -69,16 +69,16 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.1}}
             viewport={{ once: false }}
             className=" flex flex-row gap-3 items-end">
-              <button type="button" className=" text-[#bebfbf] " >
-                <FaFacebookF className="w-5 h-5 my-2 mx-2 cursor-pointer "/>
+              <button type="button" className=" text-base " >
+                <FaFacebookF className="w-5 h-5 my-2 mx-2 cursor-pointer  "/>
               </button>
-              <button type="button" className=" text-[#bebfbf]  " >
+              <button type="button" className=" text-base  " >
               <FaLinkedinIn className="w-5 h-5 my-2 mx-2 cursor-pointer"/>
               </button>
-              <button type="button" className=" text-[#bebfbf] " >
+              <button type="button" className=" text-base " >
                 <FaGithub className="w-5 h-5 my-2 mx-2 cursor-pointer"/>
               </button>
-              <button type="button" className=" text-[#bebfbf] " >
+              <button type="button" className=" text-base " >
                 <FaTwitter className="w-5 h-5 my-2 mx-2 cursor-pointer"/>
               </button>
             </motion.div>
