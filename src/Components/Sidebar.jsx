@@ -11,6 +11,8 @@ import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 import { makeStyles } from '@material-ui/core/styles';
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 
 const useStyles = makeStyles({
@@ -21,6 +23,27 @@ const useStyles = makeStyles({
 });
 
 const Sidebar = () => {
+  const [listOne, setListOne] = useState(false);
+  const [listTwo, setListTwo] = useState(false);
+  const [listThree, setListThree] = useState(false);
+  const [listFour, setListFour] = useState(false);
+  const [listFive, setListFive] = useState(false);
+  const [listSix, setListSix] = useState(false);
+  const [listSeven, setListSeven] = useState(false);
+  const [listEight, setListEight] = useState(false);
+
+  const setListFunc=(functionName)=>{
+    setListOne(false);
+    setListTwo(false);
+    setListThree(false);
+    setListFour(false);
+    setListFive(false);
+    setListSix(false);
+    setListSeven(false);
+    setListEight(false);
+    setTimeout(() => {
+      functionName(true);
+    }, 500);}
 
   const styles = useStyles();
 
@@ -46,32 +69,182 @@ const Sidebar = () => {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      
-      <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
+      <ul className=" px-10 flex flex-col gap-3 mt-20">
+        <li>
+          <button
+            onClick={() => setListFunc(setListOne)}
+            className="px-2 relative hover:bg-[#fcf1e7] active:[#fcf1e7] "
+          >
+            <span className=" font-semibold">
+              About
+              <AnimatePresence>
+                {listOne && (
+                  <motion.p
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 100 }}
+                    transition={{ duration: "1" }}
+                    className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
+                  ></motion.p>
+                )}
+              </AnimatePresence>
+            </span>
+          </button>
+        </li>
+
+        <li>
+          <button
+            onClick={() => setListFunc(setListTwo)}
+            className="px-2 relative hover:bg-[#fcf1e7] active:[#fcf1e7] "
+          >
+            <span className=" font-semibold">
+              Services{" "}
+              <AnimatePresence>
+                {listTwo && (
+                  <motion.p
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 100 }}
+                    transition={{ duration: "1" }}
+                    className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
+                  ></motion.p>
+                )}
+              </AnimatePresence>
+            </span>
+          </button>
+        </li>
+
+        <li>
+          <button
+            onClick={() => setListFunc(setListThree)}
+            className="px-2 relative hover:bg-[#fcf1e7] active:[#fcf1e7] "
+          >
+            <span className=" font-semibold">
+              Skills{" "}
+              <AnimatePresence>
+                {listThree && (
+                  <motion.p
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 100 }}
+                    transition={{ duration: "1" }}
+                    className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
+                  ></motion.p>
+                )}
+              </AnimatePresence>
+            </span>
+          </button>
+        </li>
+
+        <li>
+          <button
+            onClick={() => setListFunc(setListFour)}
+            className="px-2 relative hover:bg-[#fcf1e7] active:[#fcf1e7] "
+          >
+            <span className=" font-semibold">
+              Resume{" "}
+              <AnimatePresence>
+                {listFour && (
+                  <motion.p
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 100 }}
+                    transition={{ duration: "1" }}
+                    className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
+                  ></motion.p>
+                )}
+              </AnimatePresence>
+            </span>
+          </button>
+        </li>
+
+        <li>
+          <button
+            onClick={() => setListFunc(setListFive)}
+            className="px-2 relative hover:bg-[#fcf1e7] active:[#fcf1e7] "
+          >
+            <span className=" font-semibold">
+              Portfolio{" "}
+              <AnimatePresence>
+                {listFive && (
+                  <motion.p
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 100 }}
+                    transition={{ duration: "1" }}
+                    className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
+                  ></motion.p>
+                )}
+              </AnimatePresence>
+            </span>
+          </button>
+        </li>
+
+        <li>
+          <button
+            onClick={() => setListFunc(setListSix)}
+            className="px-2 relative hover:bg-[#fcf1e7] active:[#fcf1e7] "
+          >
+            <span className=" font-semibold">
+              Testimonials{" "}
+              <AnimatePresence>
+                {listSix && (
+                  <motion.p
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 100 }}
+                    transition={{ duration: "1" }}
+                    className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
+                  ></motion.p>
+                )}
+              </AnimatePresence>
+            </span>
+          </button>
+        </li>
+
+        <li>
+          <button
+            onClick={() => setListFunc(setListSeven)}
+            className="px-2 relative hover:bg-[#fcf1e7] active:[#fcf1e7] "
+          >
+            <span className=" font-semibold">
+              Weapons{" "}
+              <AnimatePresence>
+                {listSeven && (
+                  <motion.p
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 100 }}
+                    transition={{ duration: "1" }}
+                    className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
+                  ></motion.p>
+                )}
+              </AnimatePresence>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => setListFunc(setListEight)}
+            className="px-2 relative hover:bg-[#fcf1e7] active:[#fcf1e7] "
+          >
+            <span className=" font-semibold">
+              Contact{" "}
+              <AnimatePresence>
+                {listEight && (
+                  <motion.p
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 100 }}
+                    transition={{ duration: "1" }}
+                    className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
+                  ></motion.p>
+                )}
+              </AnimatePresence>
+            </span>
+          </button>
+        </li>
+      </ul>
      
     </Box>
   );

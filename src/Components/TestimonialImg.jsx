@@ -1,7 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTheme } from "@mui/material/styles";
 
 const TestimonialImg = () => {
+  const theme = useTheme();
+
   return (
     <div className="h-full w-full basis-1/2 relative flex justify-start items-center py-10 mt-24 md:mt-0">
       <motion.img
@@ -23,7 +26,7 @@ const TestimonialImg = () => {
         className=" w-[150px] h-[150px] absolute -top-6 -right-0 md:-right-28 lg:right-16 lg:top-10 xl:top-6 xl:right-8 2xl:top-12 2xl:right-20  bg-transparent"
       />
       <img
-        src="https://wordpressriverthemes.com/HTML/itsme/assets/images/testimonials/testimonial.png"
+        src={`${theme.palette.mode === "dark" ? "https://wordpressriverthemes.com/HTML/itsme/assets/images/testimonials/testimonial-dark.png" :"https://wordpressriverthemes.com/HTML/itsme/assets/images/testimonials/testimonial.png"}`}
         className=" flex flex-col self-center w-[75%] lg:h-[98%]"
         alt=""
       />
