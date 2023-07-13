@@ -69,182 +69,198 @@ const Sidebar = () => {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <ul className=" px-10 flex flex-col gap-3 mt-20">
-        <li>
-          <button
-            onClick={() => setListFunc(setListOne)}
-            className="px-2 relative hover:bg-[#fcf1e7] active:[#fcf1e7] "
-          >
-            <span className=" font-semibold">
-              About
-              <AnimatePresence>
-                {listOne && (
-                  <motion.p
-                    initial={{ opacity: 0, x: 100 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: 100 }}
-                    transition={{ duration: "1" }}
-                    className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
-                  ></motion.p>
-                )}
-              </AnimatePresence>
-            </span>
-          </button>
-        </li>
-
-        <li>
-          <button
-            onClick={() => setListFunc(setListTwo)}
-            className="px-2 relative hover:bg-[#fcf1e7] active:[#fcf1e7] "
-          >
-            <span className=" font-semibold">
-              Services{" "}
-              <AnimatePresence>
-                {listTwo && (
-                  <motion.p
-                    initial={{ opacity: 0, x: 100 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: 100 }}
-                    transition={{ duration: "1" }}
-                    className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
-                  ></motion.p>
-                )}
-              </AnimatePresence>
-            </span>
-          </button>
-        </li>
-
-        <li>
-          <button
-            onClick={() => setListFunc(setListThree)}
-            className="px-2 relative hover:bg-[#fcf1e7] active:[#fcf1e7] "
-          >
-            <span className=" font-semibold">
-              Skills{" "}
-              <AnimatePresence>
-                {listThree && (
-                  <motion.p
-                    initial={{ opacity: 0, x: 100 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: 100 }}
-                    transition={{ duration: "1" }}
-                    className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
-                  ></motion.p>
-                )}
-              </AnimatePresence>
-            </span>
-          </button>
-        </li>
-
-        <li>
-          <button
-            onClick={() => setListFunc(setListFour)}
-            className="px-2 relative hover:bg-[#fcf1e7] active:[#fcf1e7] "
-          >
-            <span className=" font-semibold">
-              Resume{" "}
-              <AnimatePresence>
-                {listFour && (
-                  <motion.p
-                    initial={{ opacity: 0, x: 100 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: 100 }}
-                    transition={{ duration: "1" }}
-                    className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
-                  ></motion.p>
-                )}
-              </AnimatePresence>
-            </span>
-          </button>
-        </li>
-
-        <li>
-          <button
-            onClick={() => setListFunc(setListFive)}
-            className="px-2 relative hover:bg-[#fcf1e7] active:[#fcf1e7] "
-          >
-            <span className=" font-semibold">
-              Portfolio{" "}
-              <AnimatePresence>
-                {listFive && (
-                  <motion.p
-                    initial={{ opacity: 0, x: 100 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: 100 }}
-                    transition={{ duration: "1" }}
-                    className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
-                  ></motion.p>
-                )}
-              </AnimatePresence>
-            </span>
-          </button>
-        </li>
-
-        <li>
-          <button
-            onClick={() => setListFunc(setListSix)}
-            className="px-2 relative hover:bg-[#fcf1e7] active:[#fcf1e7] "
-          >
-            <span className=" font-semibold">
-              Testimonials{" "}
-              <AnimatePresence>
-                {listSix && (
-                  <motion.p
-                    initial={{ opacity: 0, x: 100 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: 100 }}
-                    transition={{ duration: "1" }}
-                    className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
-                  ></motion.p>
-                )}
-              </AnimatePresence>
-            </span>
-          </button>
-        </li>
-
-        <li>
-          <button
-            onClick={() => setListFunc(setListSeven)}
-            className="px-2 relative hover:bg-[#fcf1e7] active:[#fcf1e7] "
-          >
-            <span className=" font-semibold">
-              Weapons{" "}
-              <AnimatePresence>
-                {listSeven && (
-                  <motion.p
-                    initial={{ opacity: 0, x: 100 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: 100 }}
-                    transition={{ duration: "1" }}
-                    className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
-                  ></motion.p>
-                )}
-              </AnimatePresence>
-            </span>
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => setListFunc(setListEight)}
-            className="px-2 relative hover:bg-[#fcf1e7] active:[#fcf1e7] "
-          >
-            <span className=" font-semibold">
-              Contact{" "}
-              <AnimatePresence>
-                {listEight && (
-                  <motion.p
-                    initial={{ opacity: 0, x: 100 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: 100 }}
-                    transition={{ duration: "1" }}
-                    className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
-                  ></motion.p>
-                )}
-              </AnimatePresence>
-            </span>
-          </button>
-        </li>
-      </ul>
+      <ul className=" px-10 flex flex-col gap-3 py-20">
+            <li>
+              <button
+                onClick={() => setListFunc(setListOne)}
+                className={`px-2 relative hover:bg-[#fcf1e7] ${
+                  listOne ? "bg-[#fcf1e7]" : ""
+                }`}
+              >
+                <a href="#About" className=" font-semibold">
+                  About
+                  <AnimatePresence>
+                    {listOne && (
+                      <motion.p
+                        initial={{ opacity: 0, x: 100 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: 100 }}
+                        transition={{ duration: "1" }}
+                        className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
+                      ></motion.p>
+                    )}
+                  </AnimatePresence>
+                </a>
+              </button>
+            </li>
+    
+            <li>
+              <button
+                onClick={() => setListFunc(setListTwo)}
+                className={`px-2 relative hover:bg-[#fcf1e7] ${
+                  listTwo ? "bg-[#fcf1e7]" : ""
+                }`}
+              >
+                <a href="#Services" className=" font-semibold">
+                  Services{" "}
+                  <AnimatePresence>
+                    {listTwo && (
+                      <motion.p
+                        initial={{ opacity: 0, x: 100 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: 100 }}
+                        transition={{ duration: "1" }}
+                        className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
+                      ></motion.p>
+                    )}
+                  </AnimatePresence>
+                </a>
+              </button>
+            </li>
+    
+            <li>
+              <button
+                onClick={() => setListFunc(setListThree)}
+                className={`px-2 relative hover:bg-[#fcf1e7] ${
+                  listThree ? "bg-[#fcf1e7]" : ""
+                }`}
+              >
+                <a href="#Skills" className=" font-semibold">
+                  Skills{" "}
+                  <AnimatePresence>
+                    {listThree && (
+                      <motion.p
+                        initial={{ opacity: 0, x: 100 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: 100 }}
+                        transition={{ duration: "1" }}
+                        className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
+                      ></motion.p>
+                    )}
+                  </AnimatePresence>
+                </a>
+              </button>
+            </li>
+    
+            <li>
+              <button
+                onClick={() => setListFunc(setListFour)}
+                className={`px-2 relative hover:bg-[#fcf1e7] ${
+                  listFour ? "bg-[#fcf1e7]" : ""
+                }`}
+              >
+                <a href="#Resume" className=" font-semibold">
+                  Resume{" "}
+                  <AnimatePresence>
+                    {listFour && (
+                      <motion.p
+                        initial={{ opacity: 0, x: 100 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: 100 }}
+                        transition={{ duration: "1" }}
+                        className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
+                      ></motion.p>
+                    )}
+                  </AnimatePresence>
+                </a>
+              </button>
+            </li>
+    
+            <li>
+              <button
+                onClick={() => setListFunc(setListFive)}
+                className={`px-2 relative hover:bg-[#fcf1e7] ${
+                  listFive ? "bg-[#fcf1e7]" : ""
+                }`}
+              >
+                <a href="#Portfolio" className=" font-semibold">
+                  Portfolio{" "}
+                  <AnimatePresence>
+                    {listFive && (
+                      <motion.p
+                        initial={{ opacity: 0, x: 100 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: 100 }}
+                        transition={{ duration: "1" }}
+                        className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
+                      ></motion.p>
+                    )}
+                  </AnimatePresence>
+                </a>
+              </button>
+            </li>
+    
+            <li>
+              <button
+                onClick={() => setListFunc(setListSix)}
+                className={`px-2 relative hover:bg-[#fcf1e7] ${
+                  listSix ? "bg-[#fcf1e7]" : ""
+                }`}
+              >
+                <a href="#Testimonial" className=" font-semibold">
+                  Testimonials{" "}
+                  <AnimatePresence>
+                    {listSix && (
+                      <motion.p
+                        initial={{ opacity: 0, x: 100 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: 100 }}
+                        transition={{ duration: "1" }}
+                        className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
+                      ></motion.p>
+                    )}
+                  </AnimatePresence>
+                </a>
+              </button>
+            </li>
+    
+            <li>
+              <button
+                onClick={() => setListFunc(setListSeven)}
+                className={`px-2 relative hover:bg-[#fcf1e7] ${
+                  listSeven ? "bg-[#fcf1e7]" : ""
+                }`}
+              >
+                <a href="#Weapons" className=" font-semibold">
+                  Weapons{" "}
+                  <AnimatePresence>
+                    {listSeven && (
+                      <motion.p
+                        initial={{ opacity: 0, x: 100 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: 100 }}
+                        transition={{ duration: "1" }}
+                        className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
+                      ></motion.p>
+                    )}
+                  </AnimatePresence>
+                </a>
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => setListFunc(setListEight)}
+                className={`px-2 relative hover:bg-[#fcf1e7] ${
+                  listEight ? "bg-[#fcf1e7]" : ""
+                }`}
+              >
+                <a href="#ContactMe" className=" font-semibold">
+                  Contact{" "}
+                  <AnimatePresence>
+                    {listEight && (
+                      <motion.p
+                        initial={{ opacity: 0, x: 100 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: 100 }}
+                        transition={{ duration: "1" }}
+                        className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
+                      ></motion.p>
+                    )}
+                  </AnimatePresence>
+                </a>
+              </button>
+            </li>
+          </ul>
      
     </Box>
   );
