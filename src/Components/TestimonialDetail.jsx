@@ -63,11 +63,14 @@ const TestimonialDetail = () => {
         viewport={{ once: false }}
         className=" font-serif text-3xl font-medium mb-5 "
       >
-        What My Happy{" "}
-        <Typing bgLight={"bg-[#fafafa]"} bgDark={"bg-[#32324c]"}>
+        What My Happy
+        <span className=" tracking-wider text-[#DF5646] "> 
+              <ReactTyped strings={[" Clients "]} typeSpeed={250} showCursor={false} loop loopCount={Infinity}/>
+               </span> Saying Their Services.
+        {/* <Typing bgLight={"bg-[#fafafa]"} bgDark={"bg-[#32324c]"}>
           Clients
-        </Typing>{" "}
-        Saying Their Services.
+        </Typing>*/}
+        
 
       </motion.p>
       <motion.div

@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import ReactTyped from "react-typed";
 
 const WeaponsDetail = () => {
-
   return (
     <div className=" basis-1/2 w-full">
       <Badges> My Weapons </Badges>
@@ -17,8 +16,17 @@ const WeaponsDetail = () => {
         viewport={{ once: false }}
         className="font-serif text-3xl font-medium mb-5"
       >
-        My <Typing bgLight={"bg-[#fff]"} bgDark={"bg-[#3c3b5a]"}>Favorite Tools</Typing> Which I Used Everyday In My Life.
-
+        My <span className=" tracking-wider text-[#DF5646] ">
+          <ReactTyped
+            strings={["Favorite Tools"]}
+            typeSpeed={250}
+            showCursor={false}
+            loop
+            loopCount={Infinity}
+          />
+        </span> Which I Used Everyday In My Life.
+        {/* <Typing bgLight={"bg-[#fff]"} bgDark={"bg-[#3c3b5a]"}>Favorite Tools</Typing> */}
+        
       </motion.p>
       <motion.div
         initial={{ y: 30 }}
