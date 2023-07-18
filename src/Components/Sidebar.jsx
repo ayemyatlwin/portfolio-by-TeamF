@@ -1,24 +1,15 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
-import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from "@material-ui/core/styles";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
+import resume from "../CV/simple_resume.pdf"; 
 
 const useStyles = makeStyles({
   paper: {
-    background: 'white',
-    color: 'black'
+    background: "white",
+    color: "black",
   },
 });
 
@@ -31,8 +22,9 @@ const Sidebar = () => {
   const [listSix, setListSix] = useState(false);
   const [listSeven, setListSeven] = useState(false);
   const [listEight, setListEight] = useState(false);
+  const [listNine, setListNine] = useState(false);
 
-  const setListFunc=(functionName)=>{
+  const setListFunc = (functionName) => {
     setListOne(false);
     setListTwo(false);
     setListThree(false);
@@ -41,35 +33,44 @@ const Sidebar = () => {
     setListSix(false);
     setListSeven(false);
     setListEight(false);
+    setListNine(false);
     setTimeout(() => {
       functionName(true);
-    }, 500);}
+    }, 500);
+  };
 
   const styles = useStyles();
 
-  const [state, setState] = React.useState({
-    right: false,
-  });
+  const [open, setOpen] = useState(false);
 
-  const toggleDrawer = (anchor, open) => (event) => {
-    if (
-      event.type === "keydown" &&
-      (event.key === "Tab" || event.key === "Shift")
-    ) {
-      return;
-    }
-
-    setState({ ...state, [anchor]: open });
+  const handleDrawerOpen = () => {
+    setOpen(true);
   };
 
-  const list = (anchor) => (
-    <Box
-      sx={{ width: 400}}
-      role="hamburger"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
-      <ul className=" px-10 flex flex-col gap-3 py-20">
+  const handleDrawerClose = () => {
+    setOpen(false);
+  };
+
+  const list = () => (
+    <Box sx={{ width: 400 }} role="hamburger" onClick={handleDrawerClose}>
+      <div className="w-full h-screen ">
+        <div className="h-[14.1%]">
+          <button className="p-10 relative border-none w-full ">
+            <span className="hamburger absolute top-9 right-6 md:right-12 lg:right-14 ">
+              <span className={`top-bun clicked`}></span>
+              <span className={`meat clicked`}></span>
+              <span className={`bottom-bun clicked`}></span>
+            </span>
+          </button>
+        </div>
+        <div className="py-20 px-20 h-[85%] ">
+          <motion.ul
+            initial={{ opacity: 0, y: 70 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: false }}
+            className=" flex flex-col gap-5"
+          >
             <li>
               <button
                 onClick={() => setListFunc(setListOne)}
@@ -77,7 +78,10 @@ const Sidebar = () => {
                   listOne ? "bg-[#fcf1e7]" : ""
                 }`}
               >
-                <a href="#About" className=" font-semibold">
+                <a
+                  href="#About"
+                  className=" text-lg font-bold text-[var(--menu-text-color)]"
+                >
                   About
                   <AnimatePresence>
                     {listOne && (
@@ -93,7 +97,7 @@ const Sidebar = () => {
                 </a>
               </button>
             </li>
-    
+
             <li>
               <button
                 onClick={() => setListFunc(setListTwo)}
@@ -101,7 +105,10 @@ const Sidebar = () => {
                   listTwo ? "bg-[#fcf1e7]" : ""
                 }`}
               >
-                <a href="#Services" className=" font-semibold">
+                <a
+                  href="#Services"
+                  className="text-lg font-bold text-[var(--menu-text-color)]"
+                >
                   Services{" "}
                   <AnimatePresence>
                     {listTwo && (
@@ -117,7 +124,7 @@ const Sidebar = () => {
                 </a>
               </button>
             </li>
-    
+
             <li>
               <button
                 onClick={() => setListFunc(setListThree)}
@@ -125,7 +132,10 @@ const Sidebar = () => {
                   listThree ? "bg-[#fcf1e7]" : ""
                 }`}
               >
-                <a href="#Skills" className=" font-semibold">
+                <a
+                  href="#Skills"
+                  className="text-lg font-bold text-[var(--menu-text-color)]"
+                >
                   Skills{" "}
                   <AnimatePresence>
                     {listThree && (
@@ -141,7 +151,7 @@ const Sidebar = () => {
                 </a>
               </button>
             </li>
-    
+
             <li>
               <button
                 onClick={() => setListFunc(setListFour)}
@@ -149,7 +159,10 @@ const Sidebar = () => {
                   listFour ? "bg-[#fcf1e7]" : ""
                 }`}
               >
-                <a href="#Resume" className=" font-semibold">
+                <a
+                  href="#Resume"
+                  className="text-lg font-bold text-[var(--menu-text-color)]"
+                >
                   Resume{" "}
                   <AnimatePresence>
                     {listFour && (
@@ -165,7 +178,7 @@ const Sidebar = () => {
                 </a>
               </button>
             </li>
-    
+
             <li>
               <button
                 onClick={() => setListFunc(setListFive)}
@@ -173,7 +186,10 @@ const Sidebar = () => {
                   listFive ? "bg-[#fcf1e7]" : ""
                 }`}
               >
-                <a href="#Portfolio" className=" font-semibold">
+                <a
+                  href="#Portfolio"
+                  className="text-lg font-bold text-[var(--menu-text-color)]"
+                >
                   Portfolio{" "}
                   <AnimatePresence>
                     {listFive && (
@@ -189,7 +205,7 @@ const Sidebar = () => {
                 </a>
               </button>
             </li>
-    
+
             <li>
               <button
                 onClick={() => setListFunc(setListSix)}
@@ -197,7 +213,10 @@ const Sidebar = () => {
                   listSix ? "bg-[#fcf1e7]" : ""
                 }`}
               >
-                <a href="#Testimonial" className=" font-semibold">
+                <a
+                  href="#Testimonial"
+                  className="text-lg font-bold text-[var(--menu-text-color)]"
+                >
                   Testimonials{" "}
                   <AnimatePresence>
                     {listSix && (
@@ -213,7 +232,7 @@ const Sidebar = () => {
                 </a>
               </button>
             </li>
-    
+
             <li>
               <button
                 onClick={() => setListFunc(setListSeven)}
@@ -221,7 +240,10 @@ const Sidebar = () => {
                   listSeven ? "bg-[#fcf1e7]" : ""
                 }`}
               >
-                <a href="#Weapons" className=" font-semibold">
+                <a
+                  href="#Weapons"
+                  className="text-lg font-bold text-[var(--menu-text-color)]"
+                >
                   Weapons{" "}
                   <AnimatePresence>
                     {listSeven && (
@@ -244,7 +266,10 @@ const Sidebar = () => {
                   listEight ? "bg-[#fcf1e7]" : ""
                 }`}
               >
-                <a href="#ContactMe" className=" font-semibold">
+                <a
+                  href="#ContactMe"
+                  className="text-lg font-bold text-[var(--menu-text-color)]"
+                >
                   Contact{" "}
                   <AnimatePresence>
                     {listEight && (
@@ -260,34 +285,66 @@ const Sidebar = () => {
                 </a>
               </button>
             </li>
-          </ul>
-     
+
+            <li className=" visible lg:hidden">
+              <button
+                onClick={() => setListFunc(setListNine)}
+                className={`px-2 relative hover:bg-[#fcf1e7] ${
+                  setListNine ? "bg-[#fcf1e7]" : ""
+                }`}
+              >
+                <a
+                  href={resume}
+                  download="Resume"
+                  className="text-lg font-bold text-[var(--menu-text-color)]"
+                >
+                  Download CV
+                  <AnimatePresence>
+                    {listNine && (
+                      <motion.p
+                        initial={{ opacity: 0, x: 100 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: 100 }}
+                        transition={{ duration: "1" }}
+                        className="absolute top-[50%] right-0 w-1 h-1 rounded-full bg-[#333] inline-block"
+                      ></motion.p>
+                    )}
+                  </AnimatePresence>
+                </a>
+              </button>
+            </li>
+          </motion.ul>
+        </div>
+        <div className="flex flex-wrap h-[.9%] pt-0 md:pt-[0.5px] lg:pt-0 2xl:pt-[0.5px]">
+          <div className=" bg-[var(--heading-color)] h-2 w-1/3 "></div>
+          <div className=" bg-[var(--primary-color)] h-2 w-1/3"></div>
+          <div className=" bg-[#0055FF] h-2 w-1/3"></div>
+        </div>
+      </div>
     </Box>
   );
 
   return (
-    
-      <>
-        <button
-          className="m-0 p-0 right-[50px] border-none "
-          onClick={toggleDrawer("right", true)}
-        >
-          <span className="hamburger">
-            <span className="top-bun"></span>
-            <span className="meat"></span>
-            <span className="bottom-bun"></span>
-          </span>
-        </button>
-        <Drawer
-          anchor="right"
-          open={state["right"]}
-          onClose={toggleDrawer("right", false)}
-          classes={{ paper: styles.paper }}
-        >
-          {list("right")}
-        </Drawer>
-      </>
-    
+    <>
+      <button
+        className="m-0 p-0 right-[50px] border-none"
+        onClick={handleDrawerOpen}
+      >
+        <span className="hamburger">
+          <span className={`top-bun unclicked`}></span>
+          <span className={`meat unclicked`}></span>
+          <span className={`bottom-bun unclicked`}></span>
+        </span>
+      </button>
+      <Drawer
+        anchor="right"
+        open={open}
+        onClose={handleDrawerClose}
+        classes={{ paper: styles.paper }}
+      >
+        {list()}
+      </Drawer>
+    </>
   );
 };
 export default Sidebar;

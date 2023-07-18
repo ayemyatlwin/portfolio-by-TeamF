@@ -61,7 +61,7 @@ const TestimonialDetail = () => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: false }}
-        className=" font-serif text-3xl font-medium mb-5 "
+        className="header-2"
       >
         What My Happy
         <span className=" tracking-wider text-[#DF5646] "> 

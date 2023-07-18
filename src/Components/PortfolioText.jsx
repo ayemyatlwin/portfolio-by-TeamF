@@ -11,7 +11,7 @@ const PortfolioText = () => {
         <div className="mb-11">
           <Badges>Portfolio</Badges>
           <motion.h2
-            initial={{ y: 80 }}
+            initial={{ y: 60 }}
             whileInView={{ y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: false }}
@@ -22,9 +22,9 @@ const PortfolioText = () => {
           </motion.h2>
         </div>
         <motion.p
-          initial={{ y: 110 }}
+          initial={{ y: 60 }}
           whileInView={{ y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: false }}
           className="paragraph-1 w-full lg:w-[80%]"
         >
@@ -38,9 +38,9 @@ const PortfolioText = () => {
           </a>
         </motion.p>
         <motion.a
-         initial={{ y: 70 }}
+         initial={{ y: 60 }}
          whileInView={{ y: 0 }}
-         transition={{ duration: 1, delay: 0.1}}
+         transition={{ duration: 0.6, delay: 0.5}}
          viewport={{ once: false }}
           href=""
           className="text-[var(--primary-color)] mt-11 inline-block underline"
@@ -51,7 +51,7 @@ const PortfolioText = () => {
       </div>
       <div className="w-full lg:w-2/4 pl-0 lg:pl-20 2xl:pl-28 ">
         <motion.div
-        initial={{ y: 120 }}
+        initial={{ y: 90 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 1.2, delay: 0.4}}
         viewport={{ once: false }}
