@@ -40,9 +40,9 @@ const PortfolioCarousel = () => {
   };
   return (
     <motion.div
-    initial={{ y: 80 }}
+    initial={{ y: 60 }}
     whileInView={{ y: 0 }}
-    transition={{ duration: 1, delay: 0.7}}
+    transition={{ duration: 1.2, delay: 0.6}}
     viewport={{ once: false }}
      className="">
       <Slider {...settings}>
