@@ -12,6 +12,7 @@
   --resume-text-color: #78add9;
   --behance-color: #0057ff;
   --dribble-color: #ea4c89;
+  --menu-text-color : #1f2044;
   --base-font: 'Poppins', sans-serif;
   --heading-font: 'Playfair Display', serif;
 }
@@ -100,14 +101,14 @@ a:hover {
   cursor: pointer;
   padding-top: 5px;
   padding-bottom: 5px;
+  transition: 1s;
 }
-.hamburger span {
+.hamburger .clicked, .hamburger span {
   align-self: flex-end;
   height: 2px;
   width: 100%;
   background: var(--light-color);
-  /* background: '#3e4651'; */
-  transition: all 400ms ease-in-out;
+  transition: all .5s ease-in-out;
 }
 .css-1aw6dkm .hamburger span, .css-13w6a9r .hamburger span{
   background: var(--heading-color);
@@ -126,17 +127,17 @@ a:hover {
 .hamburger:hover span {
   width: 100%;
 }
-.hamburger:hover .top-bun {
+.hamburger:hover .top-bun.unclicked {
   -webkit-animation: burger-hover 1s infinite ease-in-out alternate forwards 200ms;
   animation: burger-hover 1s infinite ease-in-out alternate forwards 200ms;
 }
 
-.hamburger:hover .meat {
+.hamburger:hover .meat.unclicked {
   -webkit-animation: burger-hover 1s infinite ease-in-out alternate forwards 400ms;
   animation: burger-hover 1s infinite ease-in-out alternate forwards 400ms;
 }
 
-.hamburger:hover .bottom-bun {
+.hamburger:hover .bottom-bun.unclicked {
   -webkit-animation: burger-hover 1s infinite ease-in-out alternate forwards 600ms;
   animation: burger-hover 1s infinite ease-in-out alternate forwards 600ms;
 }
@@ -151,6 +152,27 @@ a:hover {
     100% {
       width: 100%;
     }
+}
+
+/* open state */
+.css-1z13ce1 .hamburger span{
+  background: var(--menu-text-color);
+}
+.css-1z13ce1 .hamburger .top-bun {
+  rotate: -45deg;
+  transform: translate(-4.5px, 4px);
+  transition: ease-out 0.5s;
+}
+
+.css-1z13ce1 .hamburger .bottom-bun {
+  rotate: 45deg;
+  transform: translate(-4.5px, -4px);
+  transition: ease-out 0.5s;
+  width: 100%;
+}
+
+.css-1z13ce1 .hamburger .meat {
+  opacity: 0;
 }
 
 .fp-section {
@@ -169,36 +191,6 @@ a:hover {
   display: none;
 } 
 
-
-/** For tablet screen **/
-@media (min-width: 768px) and (max-width: 1023px) {
-  .css-37vzma .nav-header{
-    background-color: #32324c !important;
-    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
-  }
-  
-  .css-1aw6dkm .nav-header{
-    background-color: #fafafa !important;
-    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
-  }
-  
-}
-
-/** For phone screen **/
-@media (max-width: 768px) {
-  .css-37vzma .nav-header{
-    background-color: #32324c !important;
-    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
-  }
-  
-  .css-1aw6dkm .nav-header{
-    background-color: #fafafa !important;
-    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
-  }
-  #fp-nav.fp-right{
-    right: 10px !important;
-  }
-}
 
 /* *********** dark theme ************* */
 .css-37vzma .fullpage-wrapper > div:nth-child(1) > div{
@@ -261,7 +253,7 @@ a:hover {
 
 /* css */
 .header-2{
-  @apply text-3xl md:text-4xl font-bold font-serif capitalize mt-11 mb-2
+  @apply text-[28px] leading-[1.35] md:text-[35px] font-bold font-serif capitalize mt-11 mb-2
 }
 .header-5{
   @apply text-base font-medium
@@ -297,11 +289,11 @@ a:hover {
 /* carousel image */
 
 .carousel-image {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .carousel-image .image {
-  height: 500px;
+  height: 290px;
   display: flex;
   transition: 1.5s;
   position: relative;
@@ -388,3 +380,43 @@ a:hover {
   height: 100%;
   border-radius: 5px;
   animation: progress 1500ms ease-in  ;}
+
+
+/** For tablet screen **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .css-37vzma .nav-header{
+    background-color: #32324c !important;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
+  }
+  
+  .css-1aw6dkm .nav-header{
+    background-color: #fafafa !important;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
+  }
+  .carousel-image .image {
+    height: 330px;
+  }
+}
+
+/** For phone screen **/
+@media (max-width: 768px) {
+  .css-37vzma .nav-header{
+    background-color: #32324c !important;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
+  }
+  
+  .css-1aw6dkm .nav-header{
+    background-color: #fafafa !important;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);
+  }
+  #fp-nav.fp-right{
+    right: 10px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .carousel-image .image {
+  height: 170px;
+}
+}
+

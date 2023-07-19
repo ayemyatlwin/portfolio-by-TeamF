@@ -39,13 +39,14 @@ const PortfolioCarousel = () => {
     ]
   };
   return (
-    <div className="">
+    <motion.div
+    initial={{ y: 60 }}
+    whileInView={{ y: 0 }}
+    transition={{ duration: 1.2, delay: 0.6}}
+    viewport={{ once: false }}
+     className="">
       <Slider {...settings}>
-        <motion.div 
-        initial={{ y: 130 }}
-        whileInView={{ y: 0 }}
-        transition={{ duration: 1.3, delay: 0.3}}
-        viewport={{ once: false }}
+        <div 
         className="carousel-image  px-5">
           <a
             href="https://real-estate-hazel-one.vercel.app/home"
@@ -58,12 +59,8 @@ const PortfolioCarousel = () => {
             {/* <div className="absolute bg-[var(--heading-color)] w-[100%] h-[100%] duration-500 opacity-0 hover:opacity-[0.65] inset-0"></div> */}
             <button className="theme-btn">view demo</button>
           </a>
-        </motion.div>
-        <motion.div 
-        initial={{ y: 130 }}
-        whileInView={{ y: 0 }}
-        transition={{ duration: 1.7, delay: 0.3}}
-        viewport={{ once: false }}
+        </div>
+        <div 
         className="carousel-image px-5">
           <a
             href="https://real-estate-hazel-one.vercel.app/home"
@@ -75,7 +72,7 @@ const PortfolioCarousel = () => {
           >
             <button className="theme-btn">view demo</button>
           </a>
-        </motion.div>
+        </div>
         <div className="carousel-image px-5">
           <a
             href="https://real-estate-admin-dashboard-teamf.vercel.app/login"
@@ -127,7 +124,7 @@ const PortfolioCarousel = () => {
           </a>
         </div>
       </Slider>
-    </div>
+    </motion.div>
   );
 };
 
