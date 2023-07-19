@@ -26,7 +26,7 @@ const WeaponsImg = () => {
         whileInView={{scale:1,x:0,y:0}}
         transition={{duration:0.6}}
         viewport={{once:false}}
-         src="https://wordpressriverthemes.com/HTML/itsme/assets/images/weapons/google.png"  className="w-[74px] h-[76px] md:w-[120px] md:h-[120px] p-2 md:p-5 rounded-xl shadow-2xl absolute top-0 md:-top-5 -right-12 md:-right-40 lg:-right-10 2xl:right-20 bg-white" alt="" />
+         src="https://wordpressriverthemes.com/HTML/itsme/assets/images/weapons/google.png"  className="w-[74px] h-[76px]  md:w-[120px] md:h-[120px] p-2 md:p-5 rounded-xl shadow-2xl absolute top-0 md:-top-5 right-4 md:-right-40 lg:-right-10 2xl:right-20 bg-white" alt="" />
 
         </div>
 
@@ -62,14 +62,14 @@ const WeaponsImg = () => {
         whileInView={{scale:1,x:0,y:0}}
         transition={{duration:0.6}}
         viewport={{once:false}}
-         src="https://cdn-icons-png.flaticon.com/128/4494/4494740.png" alt=""  className="w-[63px] h-[63px] md:w-[90px] md:h-[97px] p-2 md:p-5 rounded-xl shadow-2xl absolute -top-2 left-20 md:left-10 bg-white"  />
+         src="https://cdn-icons-png.flaticon.com/128/4494/4494740.png" alt=""  className="w-[63px] h-[63px] md:w-[90px] md:h-[97px] p-2 md:p-5 rounded-xl shadow-2xl absolute -top-2 left-36 md:left-10 bg-white"  />
 
         <motion.img
         initial={{scale:0.6,y:-100,opacity:0.1}}
         whileInView={{scale:1,x:0,y:0,opacity:1}}
         transition={{duration:0.6}}
         viewport={{once:false}}
-         src="https://wordpressriverthemes.com/HTML/itsme/assets/images/weapons/xd.png"  className="w-[70px] h-[70px] md:w-[117px] md:h-[117px] p-2 md:p-5 rounded-xl shadow-2xl absolute -top-10 md:-top-18 lg:-top-20 -right-10 md:-right-40 lg:-right-7 2xl:right-24 bg-white" alt="" />
+         src="https://wordpressriverthemes.com/HTML/itsme/assets/images/weapons/xd.png"  className="w-[70px] h-[70px] md:w-[117px] md:h-[117px] p-2 md:p-5 rounded-xl shadow-2xl absolute -top-14 md:-top-18 lg:-top-20 right-4 md:-right-40 lg:-right-7 2xl:right-24 bg-white" alt="" />
 
         </div>
       </div>

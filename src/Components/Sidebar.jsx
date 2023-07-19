@@ -1,17 +1,9 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-import { makeStyles } from "@material-ui/core/styles";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import resume from "../CV/simple_resume.pdf"; 
-
-const useStyles = makeStyles({
-  paper: {
-    background: "white",
-    color: "black",
-  },
-});
 
 const Sidebar = () => {
   const [listOne, setListOne] = useState(false);
@@ -38,8 +30,6 @@ const Sidebar = () => {
       functionName(true);
     }, 500);
   };
-
-  const styles = useStyles();
 
   const [open, setOpen] = useState(false);
 
@@ -290,7 +280,7 @@ const Sidebar = () => {
               <button
                 onClick={() => setListFunc(setListNine)}
                 className={`px-2 relative hover:bg-[#fcf1e7] ${
-                  setListNine ? "bg-[#fcf1e7]" : ""
+                  listNine ? "bg-[#fcf1e7]" : ""
                 }`}
               >
                 <a
@@ -340,7 +330,12 @@ const Sidebar = () => {
         anchor="right"
         open={open}
         onClose={handleDrawerClose}
-        classes={{ paper: styles.paper }}
+        PaperProps={{
+          sx: {
+            backgroundColor: "#FAFAFA",
+            color: "#1D2043",
+          },
+        }}
       >
         {list()}
       </Drawer>

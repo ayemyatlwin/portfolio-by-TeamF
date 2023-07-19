@@ -248,10 +248,10 @@ a:hover {
 }
 
 /* *********** drawer ************* */
-.css-f2jcso-MuiPaper-root-MuiDrawer-paper{
-  background-color: var(--light-color) !important;
-  color: var(--heading-color) !important;
-}
+/* .css-f2jcso-MuiPaper-root-MuiDrawer-paper{ */
+  /* background-color: var(--light-color) !important; */
+  /* color: var(--heading-color) !important; */
+/* } */
 
 /* css */
 .header-2{
