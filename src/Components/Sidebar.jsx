@@ -290,7 +290,7 @@ const Sidebar = () => {
               <button
                 onClick={() => setListFunc(setListNine)}
                 className={`px-2 relative hover:bg-[#fcf1e7] ${
-                  setListNine ? "bg-[#fcf1e7]" : ""
+                  listNine ? "bg-[#fcf1e7]" : ""
                 }`}
               >
                 <a
