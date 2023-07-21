@@ -69,18 +69,18 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.1}}
             viewport={{ once: false }}
             className=" flex flex-row gap-3 items-end">
-              <button type="button" className=" text-base " >
+              <a href="#" target="_blank" type="button" className=" text-base hover:text-[#DF5646] hover:transition-all " >
                 <FaFacebookF className="w-5 h-5 my-2 mx-2 cursor-pointer  "/>
-              </button>
-              <button type="button" className=" text-base  " >
+              </a>
+              <a href="#" target="_blank" type="button" className=" text-base hover:text-[#DF5646] hover:transition-all  " >
               <FaLinkedinIn className="w-5 h-5 my-2 mx-2 cursor-pointer"/>
-              </button>
-              <button type="button" className=" text-base " >
+              </a>
+              <a href="#" target="_blank" type="button" className=" text-base hover:text-[#DF5646] hover:transition-all " >
                 <FaGithub className="w-5 h-5 my-2 mx-2 cursor-pointer"/>
-              </button>
-              <button type="button" className=" text-base " >
+              </a>
+              <a href="#" target="_blank" type="button" className=" text-base hover:text-[#DF5646] hover:transition-all  " >
                 <FaTwitter className="w-5 h-5 my-2 mx-2 cursor-pointer"/>
-              </button>
+              </a>
             </motion.div>
           </div>
 
